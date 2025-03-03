@@ -1,0 +1,82 @@
+class CfgClient {
+    class SpawnerCfg 
+	{
+        #include "scripts\spawnerCfg.ext"
+    };
+	
+};
+
+
+enableDebugConsole = 1;
+respawn="BASE";
+respawnButton=1;
+respawnOnStart=-1;
+disabledAI=1;
+corpseManagerMode = 1; //включает менеджер удаления трупов
+corpseLimit = 2; //Количество трупов на карте при котором срабатывает удаление
+corpseRemovalMinTime = 300; //second
+corpseRemovalMaxTime = 600; //seconds
+ 
+wreckManagerMode = 1; //включает менеджер удаления техники
+wreckLimit = 1; //Количество подбитой техники на карте при котором срабатывает удаление
+wreckRemovalMinTime = 600; //second
+wreckRemovalMaxTime = 900; //seconds
+
+class CfgFunctions
+{
+	class Nord
+	{
+		class This_wouldnt_be_needed_if_Bohemia_had_done_it_properly_in_the_first_place
+		{
+			class initPlayerServer { file = "initPlayerServer.sqf"; };
+			class setGlobalFPS { file = "scripts\setGlobalFPS.sqf"; };
+		};
+	};
+};
+class CfgRemoteExec
+{
+	class Functions
+	{
+		mode = 2;
+		// mode = 1;
+		// class Nord_fnc_initPlayerServer { allowedTargets = 2; };
+	};
+};
+
+//Discord info
+class CfgDiscordRichPresence {
+    applicationID="1243289776384249896";             // Provided by discord
+    defaultDetails="Nord | Контрнаступ Запорожье";            // Upper text
+    defaultState="By NORD Project Team";              // Lower text  
+    defaultLargeImageKey="th1q275iq7qzo4f1jr8jmq";      // Large image
+    defaultLargeImageText="";     // Large image hover text
+    defaultSmallImageKey="";      // Small image
+    defaultSmallImageText="";     // Small image hover text
+    defaultButtons[]={};          // Button texts and urls
+    useTimeElapsed=1;             // Show time elapsed since the player connected (1 - true, 0 - false)
+};
+
+
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "NORD ФРАГИ";
+        variable = "acex_killTracker_outputText";
+    };
+};
+
+class CfgDebriefing
+{
+	class shoot
+	{
+		title = "Стрельба на базе!";
+		description = "Перестань стрелять на базе, не нарушай правила!";
+		picture = "KIA";
+	};
+
+    class ban
+	{
+		title = "Вы заблокированы";
+		description = "Бан - это плохо";
+		picture = "KIA";
+	};
+};
