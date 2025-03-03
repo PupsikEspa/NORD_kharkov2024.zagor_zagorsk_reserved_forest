@@ -30448,7 +30448,7 @@ class Mission
 															side="Empty";
 															class Attributes
 															{
-																init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""opsn3_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
+																init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""gurkraren_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
 																name="gurkraren_spawner";
 																disableSimulation=1;
 															};
@@ -38891,7 +38891,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""obrmp155_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
+						init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""polk204ahmat_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
 						name="polk204ahmat_spawner";
 						disableSimulation=1;
 					};
