@@ -110,6 +110,24 @@ class odhbr83_spawner_class //83 ОДШБр
     };
 };
 
+class mcp272_spawner_class //272 мсп
+{
+    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == mcp272_spawner)"; // "(playerSide in [west,independent])"
+    
+    class mcp272_spawner_class
+	{
+        displayName = "Запрос техники 272 мсп";
+        vehicles[] =
+        {    
+		};
+        spawnPoints[] =
+        {
+            {"1",{"mcp272_spawnplace"}}
+        };
+        
+    };
+};
+
 class omcbr25_spawner_class //25 ОМСБр
 {
     conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == omcbr25_spawner)"; // "(playerSide in [west,independent])"
@@ -392,7 +410,7 @@ class rdk_spawner_class //РДК
     };
 };
 
-class ohbr3_spawner_class //1-й МехБат 3 ОШБр
+class ohbr3_spawner_class //1-й МехБат 3 ОШБр (НЕТУ)
 {
     conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == ohbr3_spawner)"; // "(playerSide in [west,independent])"
     
