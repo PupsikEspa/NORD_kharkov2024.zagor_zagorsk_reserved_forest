@@ -15,9 +15,9 @@ if ((getPlayerUID player) == "76561198168372978") then {
 };
 
 if ((getPlayerUID player) == "76561198055139490") then {
-	[((group player) getVariable "regArs"), ["NMG_weapons_A545","NMG_weapons_A545_gp"], false] call ace_arsenal_fnc_addVirtualItems; //bayraktar
+	[((group player) getVariable "regArs"), ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"], false] call ace_arsenal_fnc_addVirtualItems; //bayraktar
 };
 
 if ((getPlayerUID player) == "76561199061768748") then {
-	[((group player) getVariable "regArs"), ["NMG_weapons_A545","NMG_weapons_A545_gp"], false] call ace_arsenal_fnc_addVirtualItems; //shtefan
+	[((group player) getVariable "regArs"), ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"], false] call ace_arsenal_fnc_addVirtualItems; //shtefan
 };
