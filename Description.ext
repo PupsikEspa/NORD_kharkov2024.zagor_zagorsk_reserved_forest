@@ -46,7 +46,7 @@ class CfgRemoteExec
 //Discord info
 class CfgDiscordRichPresence {
     applicationID="1243289776384249896";             // Provided by discord
-    defaultDetails="Nord | Контрнаступ Запорожье";            // Upper text
+    defaultDetails="Nord | Харьков 2024";            // Upper text
     defaultState="By NORD Project Team";              // Lower text  
     defaultLargeImageKey="th1q275iq7qzo4f1jr8jmq";      // Large image
     defaultLargeImageText="";     // Large image hover text

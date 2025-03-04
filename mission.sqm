@@ -30448,8 +30448,8 @@ class Mission
 															side="Empty";
 															class Attributes
 															{
-																init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""gurkraren_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
-																name="gurkraren_spawner";
+																init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""gurkraken_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
+																name="gurkraken_spawner";
 																disableSimulation=1;
 															};
 															id=99828;
@@ -33825,8 +33825,8 @@ class Mission
 											};
 											class Attributes
 											{
-												name="gurkraren";
-												init="this setVariable [""regArs"", gurkraren_ars, true];" \n "this setVariable [""regSpawner"", gurkraren_spawner, true];";
+												name="gurkraken";
+												init="this setVariable [""regArs"", gurkraken_ars, true];" \n "this setVariable [""regSpawner"", gurkraken_spawner, true];";
 											};
 											id=164623;
 											atlOffset=0.091995239;
@@ -52724,7 +52724,7 @@ class Mission
 			class Attributes
 			{
 				init="if (isServer) then {  " \n " this addItemCargoGlobal [""MineDetector"", 5];" \n " this addBackpackCargoGlobal [""B_Crocus_AP_Bag"", 3];" \n " this addBackpackCargoGlobal [""B_Crocus_AT_Bag"", 3];" \n " this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1];" \n " this addBackpackCargoGlobal [""nord_stugna_Gun_Bag"", 1];" \n " this addBackpackCargoGlobal [""nord_stugna_Tripod_Bag"", 1];" \n " this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1];" \n " this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1];" \n " this addItemCargoGlobal [""ACE_VectorDay"", 5];" \n " this addItemCargoGlobal [""rhs_weap_m32"", 1];" \n " this addItemCargoGlobal [""ltf_as_zeus"", 1]; " \n " this addItemCargoGlobal [""ltf_it_615"", 1]; " \n " this addItemCargoGlobal [""ltf_reapir"", 1];" \n " this addItemCargoGlobal [""Item_Mavic3T"", 1];" \n "};" \n "";
-				name="gurkraren_ars";
+				name="gurkraken_ars";
 			};
 			id=99845;
 			type="rhs_spec_weapons_crate";
@@ -52798,7 +52798,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="gurkraren_spawnplace";
+				name="gurkraken_spawnplace";
 				disableSimulation=1;
 			};
 			id=99846;
@@ -58160,7 +58160,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						name="gurkraren_plate";
+						name="gurkraken_plate";
 						createAsLocalObject=1;
 						disableSimulation=1;
 					};
