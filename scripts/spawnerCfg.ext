@@ -496,8 +496,6 @@ class acpthror_spawner_class //АСП Тэрор
             {"rhsusf_m1043_w_mk19",1,"true"},
             {"rhsusf_m113_usarmy_M2_90",1,"true"},
             {"rhsusf_stryker_m1132_m2_np_wd",1,"true"},
-            {"rhsusf_stryker_m1132_m2_np_wd",1,"true"},
-            {"rhsusf_stryker_m1132_m2_np_wd",1,"true"},
         };
         spawnPoints[] =
         {
