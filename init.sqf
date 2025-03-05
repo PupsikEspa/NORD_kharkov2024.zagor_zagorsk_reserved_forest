@@ -1,7 +1,6 @@
 [] call compile preProcessFilelineNumbers "scripts\chat\config.sqf";
 [] call compile preProcessFilelineNumbers "scripts\chat\commands.sqf";
 [] execVM "scripts\zeus\opened_eh.sqf";
-[] execVM "scripts\arsenals.sqf";
 [] execVM "ROS_hitreaction\scripts\ROS_HitReaction.sqf";
 
 //Светлая ночь

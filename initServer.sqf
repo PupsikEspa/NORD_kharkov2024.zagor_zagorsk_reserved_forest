@@ -25,6 +25,7 @@ if (isServer) then {
 		execVM "sherpa_scripts\ini_markerFPS.sqf"
 	};
 	[] execVM "sherpa_scripts\ini_zeus.sqf";
+	[] execVM "scripts\arsenals.sqf";
 		
 		sherpa_event_kill_fix = addMissionEventHandler ["EntityKilled", {
 			params ["_killed", "_killer", "_instigator"];      
