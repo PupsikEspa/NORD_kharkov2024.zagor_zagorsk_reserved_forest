@@ -7,14 +7,14 @@ _sideCommanders = [
 
 if ((side player == civilian) || (_playerUID == "76561199287760678")) then {
 	VSU_openPKP = ["Открыть ПКП ВСУ", "Открыть ПКП ВСУ", "", {
-		missionNamespace setVariable ["WEST_pkpOpen", true];
+		missionNamespace setVariable ["WEST_pkpOpen", true, true];
 		[format ["WEST PKP Opened by curator %1!", name player]] remoteExec ["diag_log", 2];
 	}, {
 		!(missionNamespace getVariable ["WEST_pkpOpen", true])
 	}] call ace_interact_menu_fnc_createAction;
 
 	RF_openPKP = ["Открыть ПКП РФ", "Открыть ПКП РФ", "", {
-		missionNamespace setVariable ["EAST_pkpOpen", true];
+		missionNamespace setVariable ["EAST_pkpOpen", true, true];
 		[format ["EAST PKP Opened by curator %1!", name player]] remoteExec ["diag_log", 2];
 	}, {
 		!(missionNamespace getVariable ["EAST_pkpOpen", true])
@@ -22,14 +22,14 @@ if ((side player == civilian) || (_playerUID == "76561199287760678")) then {
 
 
 	VSU_closePKP = ["Закрыть ПКП ВСУ", "Закрыть ПКП ВСУ", "", {
-		missionNamespace setVariable ["WEST_pkpOpen", false];
+		missionNamespace setVariable ["WEST_pkpOpen", false, true];
 		[format ["WEST PKP Closed by curator %1!", name player]] remoteExec ["diag_log", 2];
 	}, {
 		missionNamespace getVariable ["WEST_pkpOpen", true]
 	}] call ace_interact_menu_fnc_createAction;
 
 	RF_closePKP = ["Закрыть ПКП РФ", "Закрыть ПКП РФ", "", {
-		missionNamespace setVariable ["EAST_pkpOpen", false];
+		missionNamespace setVariable ["EAST_pkpOpen", false, true];
 		[format ["EAST PKP Closed by curator %1!", name player]] remoteExec ["diag_log", 2];
 	}, {
 		missionNamespace getVariable ["EAST_pkpOpen", true]
@@ -52,7 +52,7 @@ if (!(_playerUID in _sideCommanders) && (_playerUID != "76561199287760678")) exi
 
 
 	_closePKP = ["Закрыть ПКП", "Закрыть ПКП", "", {
-		missionNamespace setVariable [(str (side player) + "_pkpOpen"), false];
+		missionNamespace setVariable [(str (side player) + "_pkpOpen"), false, true];
 		[format ["%1 PKP Closed by commander %2!", str (side player), name player]] remoteExec ["diag_log", 2];
 	}, {
 		missionNamespace getVariable [(str (side player) + "_pkpOpen"), true]
