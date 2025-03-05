@@ -6,8 +6,8 @@ if (isServer) then {
 	missionNamespace setVariable ["PKP_DURATION", 10, true]; //В СЕКУНДАХ, ДЛИТЕЛЬНОСТЬ ПКП
 	missionNamespace setVariable ["EAST_pkpUsesLeft", 2, true]; //Количество волн для РФ; Хочется без ограничений - въебите 100+
 	missionNamespace setVariable ["WEST_pkpUsesLeft", 2, true]; //Количество волн для ВСУ; Хочется без ограничений - въебите 100+
-	missionNamespace setVariable ["EAST_lastOpenPKP", 0, true]; //технический параметр, не менять
-	missionNamespace setVariable ["WEST_lastOpenPKP", 0, true]; //технический параметр, не менять
+	missionNamespace setVariable ["EAST_lastOpenPKP", serverTime, true]; //технический параметр, не менять
+	missionNamespace setVariable ["WEST_lastOpenPKP", serverTime, true]; //технический параметр, не менять
 	missionNamespace setVariable ["CIV_pkpOpen", false, true]; //технический параметр, не менять
 	missionNamespace setVariable ["EAST_pkpOpen", false, true]; //открыт ли ПКП РФ на старте миссии (не минусует волну)
 	missionNamespace setVariable ["WEST_pkpOpen", false, true]; //открыт ли ПКП ВСУ на старте миссии (не минусует волну)
