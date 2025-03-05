@@ -22,6 +22,7 @@ _zeusmodule = [
 	"76561198908535754", /// Князь
 	"76561198055139490" /// ГБР теыты [8 ОПСпН] Бiйрактар
 ];
+
 if (!(_playerUID in _zeusmodule)) exitwith {};
 if ((side player != civilian) && (_playerUID != "76561198432363921") && (_playerUID != "76561198284004882") && (_playerUID !="76561198135788033") && (_playerUID != "76561198216667587") && (_playerUID != "76561199287760678")) exitwith {};
 

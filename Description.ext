@@ -30,6 +30,7 @@ class CfgFunctions
 		{
 			class initPlayerServer { file = "initPlayerServer.sqf"; };
 			class setGlobalFPS { file = "scripts\setGlobalFPS.sqf"; };
+			class callOpenPKP { file = "scripts\callOpenPKP.sqf"; };
 		};
 	};
 };

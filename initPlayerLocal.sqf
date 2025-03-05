@@ -27,8 +27,59 @@ if(!hasInterface) exitWith {}; // If headless then exit
 [] execVM "sherpa_scripts\ini_safeZone.sqf";
 [] execVM "scripts\countLocalFPS.sqf";
 [] execVM "scripts\addDonate.sqf";
+[] execVM "scripts\commander.sqf";
 0 spawn {[] execVM "sherpa_scripts\ini_arsenalRestrict.sqf"};
-//0 spawn {[] execVM "scripts\zeus\curator.sqf"};
+
+_getPKPinfo = ["Инфо о ПКП", "Инфо о ПКП", "", {
+	_side = if (str (side player) == "EAST") then {"РФ"} else {if (str (side player) == "WEST") then {"ВСУ"} else {""} };
+	if (_side != "") then 
+	{
+		_active = missionNamespace getVariable [(str (side player) + "_pkpOpen"), true];
+		_canOpen = missionNamespace getVariable [(str (side player) + "_canOpenPKP"), true];
+		_lastOpen = missionNamespace getVariable [(str (side player) + "_lastOpenPKP"), 0];
+		_left = missionNamespace getVariable [(str (side player) + "_pkpUsesLeft"), 100];
+		_delta = missionNamespace getVariable ["PKP_DELTA", 0];
+		_duration = missionNamespace getVariable ["PKP_DURATION", 0];
+	
+		// [
+		// 	if (_active) then {format ["ПКП %1 ОТКРЫТ", _side]} else {format ["ПКП %1 ЗАКРЫТ", _side]},
+		// 	if (_active) then {format ["ДО ЗАКРЫТИЯ %1 С", (_duration - (serverTime - _lastOpen))]} else {format ["ОСТАЛОСЬ %1 С", (_delta - (serverTime - _lastOpen))]},
+		// 	format ["ДЕЛЬТА: %1", _delta], 
+		// 	format ["ДЛИТЕЛЬНОСТЬ: %1", _duration]
+		// ] spawn BIS_fnc_infoText;
+		[
+			[(if (_active) then {format ["ПКП %1 ОТКРЫТ", _side]} else {format ["ПКП %1 ЗАКРЫТ", _side]}), 0.5, 0.5],
+			[(if (_active) then {format ["ДО ЗАКРЫТИЯ %1 С", (_duration - (serverTime - _lastOpen))]} else {format ["ДО ОТКРЫТИЯ %1 С", (_delta - (serverTime - _lastOpen))]}), 0.5, 0.5],
+			[(format ["ОСТАЛОСЬ: %1", _left]), 0.5, 0.5],
+			[(format ["ДЕЛЬТА: %1", _delta]), 0.5, 0.5],
+			[(format ["ДЛИТЕЛЬНОСТЬ: %1", _duration]), 0.5, 0.5, 8]
+		] spawn BIS_fnc_EXP_camp_SITREP;
+	} else {
+		rf_active = missionNamespace getVariable ["EAST_pkpOpen", true];
+		rf_canOpen = missionNamespace getVariable ["EAST_canOpenPKP", true];
+		rf_lastOpen = missionNamespace getVariable ["EAST_lastOpenPKP", 0];
+		rf_left = missionNamespace getVariable ["EAST_pkpUsesLeft", 100];
+		ua_active = missionNamespace getVariable ["WEST_pkpOpen", true];
+		ua_canOpen = missionNamespace getVariable ["WEST_canOpenPKP", true];
+		ua_lastOpen = missionNamespace getVariable ["WEST_lastOpenPKP", 0];
+		ua_left = missionNamespace getVariable ["WEST_pkpUsesLeft", 100];
+		_delta = missionNamespace getVariable ["PKP_DELTA", 0];
+		_duration = missionNamespace getVariable ["PKP_DURATION", 0];
+		[
+			[(if (rf_active) then {"ПКП РФ ОТКРЫТ"} else {"ПКП РФ ЗАКРЫТ"}), 0.5, 0.5],
+			[(if (rf_active) then {format ["ДО ЗАКРЫТИЯ %1 С", (_duration - (serverTime - rf_lastOpen))]} else {format ["ДО ОТКРЫТИЯ %1 С", (_delta - (serverTime - rf_lastOpen))]}), 0.5, 0.5],
+			[(format ["ОСТАЛОСЬ: %1", rf_left]), 0.5, 0.5],
+			["", 0, 0],
+			[(if (ua_active) then {"ПКП ВСУ ОТКРЫТ"} else {"ПКП ВСУ ЗАКРЫТ"}), 0.5, 0.5],
+			[(if (ua_active) then {format ["ДО ЗАКРЫТИЯ %1 С", (_duration - (serverTime - ua_lastOpen))]} else {format ["ДО ОТКРЫТИЯ %1 С", (_delta - (serverTime - ua_lastOpen))]}), 0.5, 0.5],
+			[(format ["ОСТАЛОСЬ: %1", ua_left]), 0.5, 0.5],
+			[(format ["ДЕЛЬТА: %1", _delta]), 0.5, 0.5],
+			[(format ["ДЛИТЕЛЬНОСТЬ: %1", _duration]), 0.5, 0.5, 8]
+		] spawn BIS_fnc_EXP_camp_SITREP;
+	};
+}, {true}] call ace_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions"], _getPKPinfo] call ace_interact_menu_fnc_addActionToObject;
 
 // Copyright 2022 Sysroot
 

@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=94797;
+		nextID=94850;
 	};
 	class Camera
 	{
-		pos[]={978.13611,175.00957,348.20444};
-		dir[]={0.32230851,-0.81622887,0.47951481};
-		up[]={0.45534605,0.57768863,0.6774438};
-		aside[]={0.82995981,-1.3427343e-06,-0.55786085};
+		pos[]={1039.4497,223.38477,313.82611};
+		dir[]={-0.35073701,-0.66204607,0.66232812};
+		up[]={-0.30982721,0.74946314,0.58507448};
+		aside[]={0.88373679,0,0.46798438};
 	};
 };
 binarizationWanted=0;
@@ -105,7 +105,7 @@ class AddonsMetaData
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item2
@@ -143,7 +143,7 @@ class AddonsMetaData
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item8
@@ -164,7 +164,7 @@ class AddonsMetaData
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item11
@@ -201,7 +201,7 @@ class AddonsMetaData
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item17
@@ -279,7 +279,7 @@ class AddonsMetaData
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item29
@@ -352,7 +352,7 @@ class AddonsMetaData
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item40
@@ -468,7 +468,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -494,7 +494,7 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -520,7 +520,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -50094,14 +50094,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1027.0422,170.30072,346.11865};
-								angles[]={6.2725611,5.234282,6.2304091};
+								position[]={1027.042,170.3007,346.11899};
+								angles[]={6.2725558,5.2342772,6.2304068};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
 								init="[this, largeObjectLogic] call BIS_fnc_attachToRelative;  " \n "this setObjectScale 3.2;";
+								name="gate_baseVSU";
 							};
 							id=61187;
 							type="Land_rhs_fence_type_05_green_gate";
@@ -50659,13 +50660,14 @@ class Mission
 							class PositionInfo
 							{
 								position[]={19602.238,198.5994,20221.881};
-								angles[]={0.035530247,3.1605356,0.034179978};
+								angles[]={0.035534903,3.1605296,0.034173544};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
 								init="[this, largeObjectLogic] call BIS_fnc_attachToRelative;  " \n "this setObjectScale 2.5;";
+								name="gate_baseRF";
 							};
 							id=105865;
 							type="Land_rhs_fence_type_05_green_gate";
@@ -64163,7 +64165,7 @@ class Mission
 			type="";
 			a=50;
 			b=1064.8286;
-			angle=113.2477;
+			angle=113.24769;
 			id=166627;
 			atlOffset=17.029785;
 		};
@@ -64176,7 +64178,7 @@ class Mission
 			type="";
 			a=50;
 			b=781.54315;
-			angle=112.99918;
+			angle=112.99917;
 			id=166628;
 			atlOffset=14.263306;
 		};
@@ -64280,7 +64282,7 @@ class Mission
 			type="";
 			a=50;
 			b=1304.3105;
-			angle=114.05592;
+			angle=114.05591;
 			id=166636;
 			atlOffset=29.943893;
 		};
@@ -64564,7 +64566,7 @@ class Mission
 			type="";
 			a=22.816999;
 			b=49.556999;
-			angle=13.954995;
+			angle=13.954993;
 			id=166667;
 			atlOffset=4.1585083;
 			class CustomAttributes
@@ -64984,7 +64986,7 @@ class Mission
 			fillName="SolidFull";
 			a=50;
 			b=593.08234;
-			angle=25.133911;
+			angle=25.133907;
 			id=166672;
 			atlOffset=22.187958;
 			class CustomAttributes
