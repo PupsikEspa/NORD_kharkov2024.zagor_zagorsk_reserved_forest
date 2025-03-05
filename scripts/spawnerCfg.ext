@@ -320,7 +320,7 @@ class common_vsu_spawner_class //общий всу
 			{"NORD_KRAZ_6322_ammo",3,"true"},
 			{"NORD_KRAZ_FUEL",1,"true"},
 			{"NORD_KRAZ_6322_repair	",1,"true"},
-			{"RUS_VDV_2b14",1,"true"},
+			{"RUS_VDV_2b14",2,"true"},
 			{"b_afougf_Mi8MTV3_Cargo",2,"true"},
 			{"nord_mtlb_ukr",10,"true"},
 		};
@@ -423,12 +423,9 @@ class ohb92_spawner_class //92-й ОШБ
         {
             {"FA_UAF_BTR4",1,"true"},
             {"b_afougf_bmp1p",1,"true"},
-            {"b_afougf_m1151_base",1,"true"},
-            {"b_afougf_yt_m998_2dr",1,"true"},
-            {"b_afougf_uaf_fiona",1,"true"},
             {"hmmwv_m2_krest",1,"true"},
-            {"rhsusf_m113_usarmy_M2_90",1,"true"},
-            {"rhsusf_stryker_m1132_m2_wd",1,"true"},
+            {"b_afougf_uaf_fiona",1,"true"},
+            {"bmp2_ukr_krest",1,"true"},
         };
         spawnPoints[] =
         {
@@ -539,16 +536,19 @@ class gurkraken_spawner_class //ГУР Кракен
     };
 };
 
-class msco73_spawner_class //73 МЦСО
+class msco73_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМАМНЫХ
 {
     conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == msco73_spawner)"; // "(playerSide in [west,independent])"
     
     class msco73_spawner_class
 	{
-        displayName = "Запрос техники 73 МЦСО";
+        displayName = "Запрос техники ЛСР";
         vehicles[] =
         {
-			
+		    {"b_afougf_m1151_base",1,"true"},
+			{"b_afougf_yt_m998_2dr",1,"true"},
+			{"rhsusf_m113_usarmy_M2_90",1,"true"},
+			{"rhsusf_stryker_m1132_m2_wd",2,"true"},
 		};
         spawnPoints[] =
         {
@@ -591,7 +591,7 @@ class gurbratstvo_spawner_class //ГУР Братство
     
     class gurbratstvo_spawner_class
 	{
-        displayName = "Запрос техники ГУР Браство";
+        displayName = "Запрос техники ГУР Братсво";
         vehicles[] =
         {
 			{"b_afougf_m1151_base",1,"true"},
