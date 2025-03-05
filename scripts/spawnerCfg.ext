@@ -536,11 +536,11 @@ class gurkraken_spawner_class //ГУР Кракен
     };
 };
 
-class msco73_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМАМНЫХ
+class legion_pidorasov_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМАМНЫХ
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == msco73_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == legion_pidorasov_spawner)"; // "(playerSide in [west,independent])"
     
-    class msco73_spawner_class
+    class legion_pidorasov_spawner_class
 	{
         displayName = "Запрос техники ЛСР";
         vehicles[] =
@@ -552,7 +552,7 @@ class msco73_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМАМНЫХ
 		};
         spawnPoints[] =
         {
-            {"1",{"msco73_spawnplace"}}
+            {"1",{"legion_pidorasov_spawnplace"}}
         };
         
     };

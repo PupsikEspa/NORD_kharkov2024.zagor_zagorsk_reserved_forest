@@ -30478,8 +30478,8 @@ class Mission
 															side="Empty";
 															class Attributes
 															{
-																init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""msco73_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
-																name="msco73_spawner";
+																init="call{this addAction[""Запрос наземной техники"",{_this call SUS_fnc_initSpawner},""legion_pidorasov_spawner_class"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];};";
+																name="legion_pidorasov_spawner";
 																disableSimulation=1;
 															};
 															id=99847;
@@ -33878,7 +33878,7 @@ class Mission
 													flags=7;
 													class Attributes
 													{
-														description="Командир @73 МЦСО";
+														description="Командир @ЛСР";
 														isPlayable=1;
 														class Inventory
 														{
@@ -34545,8 +34545,8 @@ class Mission
 											};
 											class Attributes
 											{
-												name="msco73";
-												init="this setVariable [""regArs"", msco73_ars, true];" \n "this setVariable [""regSpawner"", msco73_spawner, true];";
+												name="legion_pidorasov";
+												init="this setVariable [""regArs"", legion_pidorasov_ars, true];" \n "this setVariable [""regSpawner"", legion_pidorasov_spawner, true];";
 											};
 											id=164638;
 											class CustomAttributes
@@ -34560,7 +34560,7 @@ class Mission
 														class data
 														{
 															singleType="STRING";
-															value="73 МЦСО";
+															value="ЛСР";
 														};
 													};
 												};
@@ -52888,7 +52888,7 @@ class Mission
 				position[]={982.20007,171.5914,346.81519};
 				angles[]={0.065904573,1.3677114,6.2291217};
 			};
-			title="73 МЦСО";
+			title="ЛСР";
 			id=99861;
 		};
 		class Item57
@@ -52904,7 +52904,7 @@ class Mission
 			class Attributes
 			{
 				init="if (isServer) then {  " \n " this addItemCargoGlobal [""MineDetector"", 5];" \n " this addBackpackCargoGlobal [""B_Crocus_AP_Bag"", 3];" \n " this addBackpackCargoGlobal [""B_Crocus_AT_Bag"", 3];" \n " this addBackpackCargoGlobal [""VTN_AGS30_SUPPORT"", 1];" \n " this addBackpackCargoGlobal [""nord_stugna_Gun_Bag"", 1];" \n " this addBackpackCargoGlobal [""nord_stugna_Tripod_Bag"", 1];" \n " this addBackpackCargoGlobal [""RHS_Metis_Gun_Bag"", 1];" \n " this addBackpackCargoGlobal [""RHS_Metis_Tripod_Bag"", 1];" \n " this addItemCargoGlobal [""ACE_VectorDay"", 5];" \n " this addItemCargoGlobal [""ltf_as_zeus"", 1]; " \n " this addItemCargoGlobal [""ltf_it_615"", 1]; " \n " this addItemCargoGlobal [""ltf_reapir"", 1];" \n " this addItemCargoGlobal [""Item_Mavic3T"", 1];" \n " this addItemCargoGlobal [""Item_Mavic"", 1];" \n "};" \n "";
-				name="msco73_ars";
+				name="legion_pidorasov_ars";
 			};
 			id=99864;
 			type="rhs_spec_weapons_crate";
@@ -52978,7 +52978,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="msco73_spawnplace";
+				name="legion_pidorasov_spawnplace";
 				disableSimulation=1;
 			};
 			id=99865;
@@ -58120,7 +58120,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						name="msco73_plate";
+						name="legion_pidorasov_plate";
 						createAsLocalObject=1;
 						disableSimulation=1;
 					};
