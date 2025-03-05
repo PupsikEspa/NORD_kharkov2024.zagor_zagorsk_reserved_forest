@@ -5,7 +5,8 @@ _donateMap = createHashMapFromArray [
 	["76561198297574929", ["rhs_weap_SCARH_LB","rhs_mag_20Rnd_SCAR_762x51_m61_ap_bk","rhsusf_acc_rvg_blk","Scot_LEU_MK8_nord","rhsusf_acc_aac_762sd_silencer"]],
 	["76561198168372978", ["NMG_weapons_A762"]],
 	["76561198055139490", ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"]],
-	["76561199061768748", ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"]]
+	["76561199061768748", ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"]],
+	["76561199287760678", ["NMG_weapons_AM17pp"]]
 ];
 
 _myDonate = _donateMap getOrDefault [(getPlayerUID player), []];
