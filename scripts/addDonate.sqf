@@ -21,3 +21,10 @@ if ((getPlayerUID player) == "76561198055139490") then {
 if ((getPlayerUID player) == "76561199061768748") then {
 	[((group player) getVariable "regArs"), ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"], false] call ace_arsenal_fnc_addVirtualItems; //shtefan
 };
+
+if ((getPlayerUID player) == "76561199287760678") then {
+    _logStr = format ["Ars: %1, added items",((group player) getVariable "regArs")];
+	systemChat _logStr;
+	diag_log _logStr;
+	[((group player) getVariable "regArs"), ["lmg_MG3_rail","120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M","120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"], false] call ace_arsenal_fnc_addVirtualItems; //shtefan
+};
