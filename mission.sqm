@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=94877;
+		nextID=94939;
 	};
 	class Camera
 	{
-		pos[]={1355.3004,428.1521,14645.75};
-		dir[]={0.2651332,-0.89346343,0.36254415};
-		up[]={0.5274151,0.44912896,0.72118938};
-		aside[]={0.8071838,7.9046004e-08,-0.5903042};
+		pos[]={19613.01,228.2529,20238.742};
+		dir[]={-0.34764513,-0.85847044,-0.37709194};
+		up[]={-0.58188665,0.51286489,-0.63117474};
+		aside[]={-0.73524153,-4.7497451e-08,0.67782634};
 	};
 };
 binarizationWanted=0;
@@ -475,7 +475,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -501,7 +501,7 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -514,7 +514,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -527,7 +527,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -50177,14 +50177,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1027.0422,170.30072,346.11865};
-								angles[]={6.2725611,5.234282,6.2304091};
+								position[]={1027.042,170.3007,346.11899};
+								angles[]={6.2725558,5.2342772,6.2304068};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
 								init="[this, largeObjectLogic] call BIS_fnc_attachToRelative;  " \n "this setObjectScale 3.2;";
+								name="gate_baseVSU";
 							};
 							id=61187;
 							type="Land_rhs_fence_type_05_green_gate";
@@ -50742,13 +50743,14 @@ class Mission
 							class PositionInfo
 							{
 								position[]={19602.238,198.5994,20221.881};
-								angles[]={0.035530247,3.1605356,0.034179978};
+								angles[]={0.035534903,3.1605296,0.034173544};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
 								init="[this, largeObjectLogic] call BIS_fnc_attachToRelative;  " \n "this setObjectScale 2.5;";
+								name="gate_baseRF";
 							};
 							id=105865;
 							type="Land_rhs_fence_type_05_green_gate";
@@ -64591,7 +64593,7 @@ class Mission
 			type="";
 			a=97.125999;
 			b=112.316;
-			angle=244.51097;
+			angle=244.51096;
 			id=166666;
 			atlOffset=0.0083770752;
 			class CustomAttributes
@@ -64648,7 +64650,7 @@ class Mission
 			type="";
 			a=87.601303;
 			b=88.771858;
-			angle=45.282997;
+			angle=45.282993;
 			id=166667;
 			atlOffset=2.4769592;
 			class CustomAttributes
@@ -65213,7 +65215,7 @@ class Mission
 			colorName="ColorBlue";
 			a=21.246075;
 			b=396.37225;
-			angle=33.208988;
+			angle=33.208984;
 			id=166792;
 			class CustomAttributes
 			{
@@ -65270,7 +65272,7 @@ class Mission
 			colorName="ColorCIV";
 			a=21.246;
 			b=726.31262;
-			angle=33.208984;
+			angle=33.208981;
 			id=166793;
 			atlOffset=5.1790619;
 			class CustomAttributes
