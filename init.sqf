@@ -3,7 +3,6 @@
 [] execVM "scripts\zeus\opened_eh.sqf";
 [] execVM "scripts\arsenals.sqf";
 [] execVM "ROS_hitreaction\scripts\ROS_HitReaction.sqf";
-//[] execVM "scripts\addDonate.sqf";
 
 //Светлая ночь
 CHBN_adjustBrightness = 1;
