@@ -13,6 +13,6 @@ _donateMap = createHashMapFromArray [
 _myDonate = _donateMap getOrDefault [(getPlayerUID player), []];
 if (count _myDonate < 1) exitWith{};
 sleep 5;
-_logStr = format ["Ars: %1, added items %2; Group %3; mydonate %4",((group player) getVariable "regArs"), _myDonate, (group player), QUOTE(_myDonate)];
+_logStr = format ["Ars: %1, added items %2; Group %3",((group player) getVariable "regArs"), _myDonate, (group player)];
 diag_log _logStr;
 [((group player) getVariable "regArs"), _myDonate, false] call ace_arsenal_fnc_addVirtualItems;
