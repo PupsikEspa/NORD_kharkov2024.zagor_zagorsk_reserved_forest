@@ -124,7 +124,7 @@ class mcp272_spawner_class //272 мсп
 			{"nord_RUS_MSV_bmp3m_north",1,"true"},
 			{"nord_uaz452b_north",1,"true"},
 			{"nord_UAZ_03_transport_north",2,"true"},
-			{"tundra_ukr_krest",1,"true"},
+			{"nord_tundra_rus_north",1,"true"},
 			{"nord_BRDM2_north",1,"true"},
 			{"NORD_Tigr_M_233114_Camo_KORD_RU_north",1,"true"},
 			{"nord_tigr_atgm_north",1,"true"},
@@ -149,7 +149,7 @@ class omcbr25_spawner_class //25 ОМСБр
         {    
             {"nord_tigr_m_north",1,"true"},
             {"nord_UAZ_03_transport_north",1,"true"},
-            {"tundra_ukr_krest",1,"true"},
+            {"nord_tundra_rus_north",1,"true"},
             {"NORD_Tigr_M_233114_Camo_KORD_RU_north",1,"true"},
             {"nord_RUS_MSV_btr80_north",1,"true"},
             {"nord_RUS_MSV_btr82a_north",1,"true"},
@@ -173,7 +173,7 @@ class obrmp155_spawner_class //155 ОБрМП
         {    
            {"nord_uaz452b_north",1,"true"}, 
            {"nord_UAZ_03_transport_north",1,"true"}, 
-           {"tundra_ukr_krest",1,"true"}, 
+           {"nord_tundra_rus_north",1,"true"}, 
            {"nord_RUS_MSV_btr80_north",1,"true"}, 
            {"nord_RUS_MSV_btr82a_north",1,"true"},
 		};
@@ -220,7 +220,7 @@ class soborahmat_spawner_class //СОБР Ахмат
            {"nord_RUS_MSV_bmp1_north",1,"true"},
            {"nord_tigr_m_north",2,"true"},
            {"nord_UAZ_03_transport_north",1,"true"},
-           {"tundra_ukr_krest",1,"true"},
+           {"nord_tundra_rus_north",1,"true"},
            {"nord_tigr_sts_north",2,"true"},
            {"nord_RUS_GRU_asn233115sts_north",1,"true"},
            {"nord_tigr_atgm_north",1,"true"},
@@ -245,7 +245,7 @@ class obrcpn2_spawner_class //2-й ОБрСпН
         {    
             {"nord_tigr_m_north",2,"true"},
             {"nord_UAZ_03_transport_north",1,"true"},
-            {"tundra_ukr_krest",1,"true"},
+            {"nord_tundra_rus_north",1,"true"},
             {"nord_RUS_GRU_kamaz63968_north",1,"true"},
             {"nord_tigr_sts_north",1,"true"},
             {"nord_RUS_GRU_asn233115sts_north",1,"true"},
@@ -270,7 +270,7 @@ class obrcpn16_spawner_class //16 ОБрСпН
         {    
             {"nord_uaz452b_north",1,"true"},
             {"nord_UAZ_03_transport_north",1,"true"},
-            {"tundra_ukr_krest",1,"true"},
+            {"nord_tundra_rus_north",1,"true"},
             {"nord_RUS_GRU_kamaz63968_north",1,"true"},
 		};
         spawnPoints[] =
@@ -292,7 +292,7 @@ class polk204ahmat_spawner_class //204-й Полк Ахмат
         {    
             {"nord_uaz452b_north",2,"true"},
             {"nord_UAZ_03_transport_north",1,"true"},
-            {"tundra_ukr_krest",1,"true"},
+            {"nord_tundra_rus_north",1,"true"},
             {"nord_BRDM2_north",1,"true"},
             {"nord_RUS_MSV_btr80_north",1,"true"},
 		};
