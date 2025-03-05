@@ -14,8 +14,8 @@ if (isServer) then {
 	missionNamespace setVariable ["EAST_canOpenPKP", true, true]; //ВСЕГДА ставьте противоположное значение от EAST_pkpOpen
 	missionNamespace setVariable ["WEST_canOpenPKP", true, true]; //ВСЕГДА ставьте противоположное значение от WEST_pkpOpen
 
-	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseRF, getPosATL gate_baseRF, "БАЗА РФ"]] call CBA_fnc_serverEvent;
-	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseVSU, getPosATL gate_baseVSU, "БАЗА ВСУ"]] call CBA_fnc_serverEvent;
+	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseRF, getPosATL gate_baseRF, "BASE_RF"]] call CBA_fnc_serverEvent;
+	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseVSU, getPosATL gate_baseVSU, "BASE_VSU"]] call CBA_fnc_serverEvent;
 
 	save_var_hohol = 1;
 	clean_var_hohol = 1;
