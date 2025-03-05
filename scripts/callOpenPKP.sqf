@@ -11,7 +11,8 @@ missionNamespace setVariable [(_side + "_pkpUsesLeft"), _left - 1, true];
 diag_log format ["%1 PKP Opened by commander! Left: %2", _side, _left];
 
 [{
-	serverTime - (missionNamespace getVariable [(str (side player) + "_lastOpenPKP"), 0]) >= (missionNamespace getVariable ["PKP_DURATION", 0])
+	_side = _this select 0;
+	serverTime - (missionNamespace getVariable [(_side + "_lastOpenPKP"), 0]) >= (missionNamespace getVariable ["PKP_DURATION", 0])
 }, {
 	_side = _this select 0;
 	missionNamespace setVariable [(_side + "_pkpOpen"), false, true];
@@ -19,14 +20,9 @@ diag_log format ["%1 PKP Opened by commander! Left: %2", _side, _left];
 }, [_side]] call CBA_fnc_waitUntilAndExecute;
 
 [{
-	serverTime - (missionNamespace getVariable [(str (side player) + "_lastOpenPKP"), 0]) >= (missionNamespace getVariable ["PKP_DELTA", 0])
+	serverTime - (missionNamespace getVariable [(_side + "_lastOpenPKP"), 0]) >= (missionNamespace getVariable ["PKP_DELTA", 0])
 }, {
 	_side = _this select 0;
 	missionNamespace setVariable [(_side + "_canOpenPKP"), true, true];
 	diag_log format ["%1 PKP can be now opened!", _side];
 }, [_side]] call CBA_fnc_waitUntilAndExecute;
-
-
-//canOpenPKP
-//!(missionNamespace getVariable ["_pkpOpen", true]) &&
-//	(serverTime - (missionNamespace getVariable [(str (side player) + "_lastOpenPKP"), 0]) >= (missionNamespace getVariable ["PKP_DELTA", 0]))
