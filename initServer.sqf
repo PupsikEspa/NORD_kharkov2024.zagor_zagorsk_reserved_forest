@@ -14,6 +14,27 @@ if (isServer) then {
 	missionNamespace setVariable ["EAST_canOpenPKP", true, true]; //ВСЕГДА ставьте противоположное значение от EAST_pkpOpen
 	missionNamespace setVariable ["WEST_canOpenPKP", true, true]; //ВСЕГДА ставьте противоположное значение от WEST_pkpOpen
 
+	_groupNamesMap = createHashMapFromArray [
+		["92-й ОШБ","ohb92"],
+		["ГУР ""Братство""","gurbratstvo"],
+		["ГУР Стугна","gurstugna"],
+		["ГУР ""Кракен""","gurkraken"],
+		["ЛСР","legion_pidorasov"],
+		["АСП ""Тэрор""","acpthror"],
+		["РДК","rdk"],
+		["83 ОДШБр","odhbr83"],
+		["БАРС - 29","barc29"],
+		["204-й Полк ""Ахмат""",""],
+		["25 ОМСБр","omcbr25"],
+		["СОБР «Ахмат»","soborahmat"],
+		["2-й ОБрСпН","obrcpn2"],
+		["16 ОБрСпН","obrcpn16"],
+		["155 ОБрМП","obrmp155"],
+		["272 мсп","mcp272"]
+	];
+	
+	publicVariable "_groupNamesMap";
+
 	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseRF, getPosATL gate_baseRF, "BASE_RF"]] call CBA_fnc_serverEvent;
 	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseVSU, getPosATL gate_baseVSU, "BASE_VSU"]] call CBA_fnc_serverEvent;
 
