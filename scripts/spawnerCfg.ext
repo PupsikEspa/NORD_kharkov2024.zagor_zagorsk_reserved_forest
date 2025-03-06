@@ -91,7 +91,7 @@ class logistic_rf_spawner_class //ящики рф
 
 class odhbr83_spawner_class //83 ОДШБр
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == odhbr83_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == odhbr83_spawner)"; // "(playerSide in [west,independent])"
     
     class odhbr83_spawner_class
 	{
@@ -114,7 +114,7 @@ class odhbr83_spawner_class //83 ОДШБр
 
 class mcp272_spawner_class //272 мсп
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == mcp272_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == mcp272_spawner)"; // "(playerSide in [west,independent])"
     
     class mcp272_spawner_class
 	{
@@ -140,7 +140,7 @@ class mcp272_spawner_class //272 мсп
 
 class omcbr25_spawner_class //25 ОМСБр
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == omcbr25_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == omcbr25_spawner)"; // "(playerSide in [west,independent])"
     
     class omcbr25_spawner_class
 	{
@@ -164,7 +164,7 @@ class omcbr25_spawner_class //25 ОМСБр
 
 class obrmp155_spawner_class //155 ОБрМП
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == obrmp155_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrmp155_spawner)"; // "(playerSide in [west,independent])"
     
     class obrmp155_spawner_class
 	{
@@ -187,7 +187,7 @@ class obrmp155_spawner_class //155 ОБрМП
 
 class barc29_spawner_class //БАРС - 29
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == barc29_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == barc29_spawner)"; // "(playerSide in [west,independent])"
     
     class barc29_spawner_class
 	{
@@ -208,7 +208,7 @@ class barc29_spawner_class //БАРС - 29
 
 class soborahmat_spawner_class //СОБР Ахмат
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == soborahmat_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == soborahmat_spawner)"; // "(playerSide in [west,independent])"
     
     class soborahmat_spawner_class
 	{
@@ -236,7 +236,7 @@ class soborahmat_spawner_class //СОБР Ахмат
 
 class obrcpn2_spawner_class //2-й ОБрСпН
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == obrcpn2_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrcpn2_spawner)"; // "(playerSide in [west,independent])"
     
     class obrcpn2_spawner_class
 	{
@@ -261,7 +261,7 @@ class obrcpn2_spawner_class //2-й ОБрСпН
 
 class obrcpn16_spawner_class //16 ОБрСпН
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == obrcpn16_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == obrcpn16_spawner)"; // "(playerSide in [west,independent])"
     
     class obrcpn16_spawner_class
 	{
@@ -283,7 +283,7 @@ class obrcpn16_spawner_class //16 ОБрСпН
 
 class polk204ahmat_spawner_class //204-й Полк Ахмат
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == polk204ahmat_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == polk204ahmat_spawner)"; // "(playerSide in [west,independent])"
     
     class polk204ahmat_spawner_class
 	{
@@ -414,7 +414,7 @@ class logistic_vsu_spawner_class //ящики всу
 
 class ohb92_spawner_class //92-й ОШБ
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == ohb92_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == ohb92_spawner)"; // "(playerSide in [west,independent])"
     
     class ohb92_spawner_class
 	{
@@ -437,7 +437,7 @@ class ohb92_spawner_class //92-й ОШБ
 
 class rdk_spawner_class //РДК
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == rdk_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == rdk_spawner)"; // "(playerSide in [west,independent])"
     
     class rdk_spawner_class
 	{
@@ -463,7 +463,7 @@ class rdk_spawner_class //РДК
 
 class ohbr3_spawner_class //1-й МехБат 3 ОШБр (НЕТУ)
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == ohbr3_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == ohbr3_spawner)"; // "(playerSide in [west,independent])"
     
     class ohbr3_spawner_class
 	{
@@ -482,7 +482,7 @@ class ohbr3_spawner_class //1-й МехБат 3 ОШБр (НЕТУ)
 
 class acpthror_spawner_class //АСП Тэрор
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == acpthror_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == acpthror_spawner)"; // "(playerSide in [west,independent])"
     
     class acpthror_spawner_class
 	{
@@ -511,7 +511,7 @@ class acpthror_spawner_class //АСП Тэрор
 
 class gurkraken_spawner_class //ГУР Кракен
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == gurkraken_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == gurkraken_spawner)"; // "(playerSide in [west,independent])"
     
     class gurkraken_spawner_class
 	{
@@ -538,7 +538,7 @@ class gurkraken_spawner_class //ГУР Кракен
 
 class legion_pidorasov_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМАМНЫХ
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == legion_pidorasov_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == legion_pidorasov_spawner)"; // "(playerSide in [west,independent])"
     
     class legion_pidorasov_spawner_class
 	{
@@ -560,7 +560,7 @@ class legion_pidorasov_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМ�
 
 class gurstugna_spawner_class //ГУР Стугна
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == gurstugna_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == gurstugna_spawner)"; // "(playerSide in [west,independent])"
     
     class gurstugna_spawner_class
 	{
@@ -587,7 +587,7 @@ class gurstugna_spawner_class //ГУР Стугна
 
 class gurbratstvo_spawner_class //ГУР Братство
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == gurbratstvo_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == gurbratstvo_spawner)"; // "(playerSide in [west,independent])"
     
     class gurbratstvo_spawner_class
 	{
@@ -614,7 +614,7 @@ class gurbratstvo_spawner_class //ГУР Братство
 // -------------- Ивентологи -----------------------
 class event_spawner_class //Ивентологи
 {
-    conditionToAccess = "(side player == civilian) || (((group player) getVariable ""regSpawner"") == event_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == event_spawner)"; // "(playerSide in [west,independent])"
     
     class event_spawner_class
 	{
