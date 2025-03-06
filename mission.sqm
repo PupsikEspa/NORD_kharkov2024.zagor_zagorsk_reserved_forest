@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=95063;
+		nextID=95125;
 	};
 	class Camera
 	{
-		pos[]={19645.93,262.60559,20246.432};
-		dir[]={-0.71405876,-0.67033041,0.20197058};
-		up[]={-0.64502633,0.74206203,0.18244499};
-		aside[]={0.27217364,4.0628947e-08,0.96225774};
+		pos[]={951.31378,177.53586,359.42529};
+		dir[]={0.5547657,-0.81618172,0.16151099};
+		up[]={0.78364712,0.57779294,0.22814617};
+		aside[]={0.27952906,8.4779458e-08,-0.96013784};
 	};
 };
 binarizationWanted=0;
@@ -107,7 +107,7 @@ class AddonsMetaData
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item2
@@ -138,7 +138,7 @@ class AddonsMetaData
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item7
@@ -152,7 +152,7 @@ class AddonsMetaData
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item9
@@ -173,7 +173,7 @@ class AddonsMetaData
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item12
@@ -210,7 +210,7 @@ class AddonsMetaData
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item18
@@ -288,7 +288,7 @@ class AddonsMetaData
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item30
@@ -361,7 +361,7 @@ class AddonsMetaData
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
 		class Item41
@@ -475,7 +475,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -501,7 +501,7 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -527,7 +527,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -64269,7 +64269,7 @@ class Mission
 			type="";
 			a=50;
 			b=1064.8286;
-			angle=113.2477;
+			angle=113.24769;
 			id=166627;
 			atlOffset=17.029785;
 		};
@@ -64282,7 +64282,7 @@ class Mission
 			type="";
 			a=50;
 			b=781.54315;
-			angle=112.99918;
+			angle=112.99917;
 			id=166628;
 			atlOffset=14.263306;
 		};
@@ -64386,7 +64386,7 @@ class Mission
 			type="";
 			a=50;
 			b=1304.3105;
-			angle=114.05592;
+			angle=114.05591;
 			id=166636;
 			atlOffset=29.943893;
 		};
@@ -64670,7 +64670,7 @@ class Mission
 			type="";
 			a=87.601303;
 			b=88.771858;
-			angle=45.282986;
+			angle=45.282982;
 			id=166667;
 			atlOffset=2.4769592;
 			class CustomAttributes
