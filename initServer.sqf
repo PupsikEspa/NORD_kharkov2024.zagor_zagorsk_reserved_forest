@@ -33,7 +33,7 @@ if (isServer) then {
 		["272 мсп","mcp272"]
 	];
 	
-	publicVariable "_groupNamesMap";
+	missionNamespace setVariable ["groupNamesByCallsigns", _groupNamesMap, true];
 
 	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseRF, getPosATL gate_baseRF, "BASE_RF"]] call CBA_fnc_serverEvent;
 	["zen_modules_moduleCreateTeleporter_PKP", [gate_baseVSU, getPosATL gate_baseVSU, "BASE_VSU"]] call CBA_fnc_serverEvent;
