@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=170790;
+		nextID=170791;
 	};
 	class MarkerIDProvider
 	{
@@ -25,9 +25,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={5287.5107,596.39026,11166.128};
-		dir[]={0.19857198,-0.60513002,0.77097124};
-		up[]={0.15093184,0.79612571,0.58600563};
-		aside[]={0.9683997,7.3079718e-08,-0.24942207};
+		dir[]={0.19857116,-0.60512704,0.77096742};
+		up[]={0.15093131,0.79612893,0.58600217};
+		aside[]={0.96839523,7.4505806e-09,-0.24942088};
 	};
 };
 binarizationWanted=0;
@@ -499,7 +499,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -512,7 +512,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -30091,7 +30091,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=284;
+		items=277;
 		class Item0
 		{
 			dataType="Object";
@@ -64635,7 +64635,7 @@ class Mission
 			type="";
 			a=50;
 			b=1064.8286;
-			angle=113.24761;
+			angle=113.24759;
 			id=166627;
 			atlOffset=17.029785;
 		};
@@ -64648,7 +64648,7 @@ class Mission
 			type="";
 			a=50;
 			b=781.54315;
-			angle=112.99909;
+			angle=112.99907;
 			id=166628;
 			atlOffset=14.263306;
 		};
@@ -64878,516 +64878,110 @@ class Mission
 		};
 		class Item259
 		{
-			dataType="Marker";
-			position[]={1299.7748,218.56927,13326.448};
-			name="marker_1224";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=324.79514;
-			angle=264.62601;
-			id=166967;
-			atlOffset=15.954269;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item260
-		{
-			dataType="Marker";
-			position[]={493.88977,212.97926,13415.133};
-			name="marker_1225";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=526.78394;
-			angle=283.64633;
-			id=166968;
-			atlOffset=6.7848969;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item261
-		{
-			dataType="Marker";
-			position[]={2835.6006,239.77849,14840.188};
-			name="marker_1226";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=405.80084;
-			angle=42.353241;
-			id=166969;
-			atlOffset=14.9944;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item262
-		{
-			dataType="Marker";
-			position[]={2987.6726,240.54518,15863.611};
-			name="marker_1227";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=746.87073;
-			angle=350.71912;
-			id=166970;
-			atlOffset=15.322571;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item263
-		{
-			dataType="Marker";
-			position[]={2272.9768,230.13898,16780.525};
-			name="marker_1228";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=637.20581;
-			angle=289.17502;
-			id=166971;
-			atlOffset=15.921234;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item264
-		{
-			dataType="Marker";
-			position[]={1585.651,204.15132,17172.289};
-			name="marker_1229";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=218.4621;
-			angle=334.57291;
-			id=166972;
-			atlOffset=3.9134521;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item265
-		{
-			dataType="Marker";
-			position[]={752.03009,200.4447,17348.178};
-			name="marker_1230";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorCIV";
-			a=20;
-			b=756.58569;
-			angle=268.9664;
-			id=166973;
-			atlOffset=4.4420776;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="markerblink";
-					expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item266
-		{
 			dataType="Layer";
 			name="Pipes - Large";
 			id=167473;
 			atlOffset=-201.53;
 		};
-		class Item267
+		class Item260
 		{
 			dataType="Layer";
 			name="Walls Western";
 			id=167584;
 			atlOffset=-201.53;
 		};
-		class Item268
+		class Item261
 		{
 			dataType="Layer";
 			name="Filler - Industrial";
 			id=167664;
 			atlOffset=-201.53;
 		};
-		class Item269
+		class Item262
 		{
 			dataType="Layer";
 			name="Filler - Misc #2";
 			id=167786;
 			atlOffset=-201.53;
 		};
-		class Item270
+		class Item263
 		{
 			dataType="Layer";
 			name="Camp #B";
 			id=167824;
 			atlOffset=-201.53;
 		};
-		class Item271
+		class Item264
 		{
 			dataType="Layer";
 			name="Heavy Bunker Checkpoint #O";
 			id=167857;
 			atlOffset=-201.53;
 		};
-		class Item272
+		class Item265
 		{
 			dataType="Layer";
 			name="Bunker (Small) Checkpoint #O";
 			id=167878;
 			atlOffset=-201.53;
 		};
-		class Item273
+		class Item266
 		{
 			dataType="Layer";
 			name="Radio Tower #O";
 			id=167911;
 			atlOffset=-201.53;
 		};
-		class Item274
+		class Item267
 		{
 			dataType="Layer";
 			name="Vehicle Net #O";
 			id=167918;
 			atlOffset=-201.53;
 		};
-		class Item275
+		class Item268
 		{
 			dataType="Layer";
 			name="Camp Courage";
 			id=167971;
 			atlOffset=-201.53;
 		};
-		class Item276
+		class Item269
 		{
 			dataType="Layer";
 			name="Hasty Roadblock";
 			id=167979;
 			atlOffset=-201.53;
 		};
-		class Item277
+		class Item270
 		{
 			dataType="Layer";
 			name="Roadblock";
 			id=167991;
 			atlOffset=-201.53;
 		};
-		class Item278
+		class Item271
 		{
 			dataType="Layer";
 			name="Vehicle Cargo Post #O";
 			id=168020;
 			atlOffset=-201.53;
 		};
-		class Item279
+		class Item272
 		{
 			dataType="Layer";
 			name="Vehicle Bunker (Small) #O";
 			id=168038;
 			atlOffset=-201.53;
 		};
-		class Item280
+		class Item273
 		{
 			dataType="Layer";
 			name="Checkpoint with bunker (Chechen War style)";
 			id=168126;
 			atlOffset=-201.53;
 		};
-		class Item281
+		class Item274
 		{
 			dataType="Layer";
 			name="Ukranian and Russian Compounds";
@@ -65621,20 +65215,20 @@ class Mission
 			id=170662;
 			atlOffset=-201.53;
 		};
-		class Item282
+		class Item275
 		{
 			dataType="Layer";
 			name="Слой 95562";
 			id=170766;
 			atlOffset=-201.53;
 		};
-		class Item283
+		class Item276
 		{
 			dataType="Layer";
 			name="ТРИГГЕР";
 			class Entities
 			{
-				items=15;
+				items=16;
 				class Item0
 				{
 					dataType="Marker";
@@ -65698,8 +65292,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={5374.2183,196.44728,12024.386};
-						angles[]={6.2491984,6.1251979,0.012000273};
+						position[]={5374.2178,196.44728,12024.386};
+						angles[]={6.2492037,6.1251979,0.012007865};
 					};
 					id=170786;
 					type="WMT_Task_Point";
@@ -65886,7 +65480,7 @@ class Mission
 					type="";
 					a=78.760002;
 					b=89.320999;
-					angle=346.41696;
+					angle=346.41687;
 					id=170785;
 					atlOffset=2.1457672;
 					class CustomAttributes
@@ -65943,7 +65537,7 @@ class Mission
 					type="";
 					a=67.459;
 					b=64.203003;
-					angle=347.14996;
+					angle=347.14993;
 					id=170784;
 					atlOffset=-0.079483032;
 					class CustomAttributes
@@ -66302,7 +65896,7 @@ class Mission
 					colorName="ColorCIV";
 					a=20.289301;
 					b=479.62158;
-					angle=92.485535;
+					angle=92.485527;
 					id=170777;
 					atlOffset=6.5971985;
 					class CustomAttributes
@@ -66755,9 +66349,66 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={6558.9429,228.67793,13073.955};
+					name="marker_1243";
+					markerType="RECTANGLE";
+					type="";
+					colorName="ColorCIV";
+					a=18.976196;
+					b=517.21979;
+					angle=4.7019897;
+					id=170790;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="markerblink";
+							expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=3;
+										class Item0
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=170789;
-			atlOffset=3.7171478;
+			atlOffset=5.7109222;
 		};
 	};
 };
