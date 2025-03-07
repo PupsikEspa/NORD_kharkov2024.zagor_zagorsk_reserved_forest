@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=95563;
+		nextID=95669;
 	};
 	class Camera
 	{
-		pos[]={5287.5107,596.39026,11166.128};
-		dir[]={0.19857116,-0.60512704,0.77096742};
-		up[]={0.15093131,0.79612893,0.58600217};
-		aside[]={0.96839523,7.4505806e-09,-0.24942088};
+		pos[]={19544.541,206.30034,20026.514};
+		dir[]={0.85801655,-0.50653976,0.085041925};
+		up[]={0.50407189,0.86221349,0.049960624};
+		aside[]={0.098630287,2.4054316e-07,-0.99512661};
 	};
 };
 binarizationWanted=0;
-sourceName="Mission2";
+sourceName="NORD_kharkov2024";
 addons[]=
 {
 	"A3_Structures_F_Civ_Camping",
@@ -460,7 +460,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -499,7 +499,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -512,7 +512,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -38915,7 +38915,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -38963,7 +38963,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -39011,7 +39011,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -39059,7 +39059,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -39107,7 +39107,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -47958,7 +47958,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -48091,7 +48091,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -48296,7 +48296,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -48466,7 +48466,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -48625,7 +48625,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -48784,7 +48784,7 @@ class Mission
 								class data
 								{
 									singleType="BOOL";
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -64635,7 +64635,7 @@ class Mission
 			type="";
 			a=50;
 			b=1064.8286;
-			angle=113.24759;
+			angle=113.24758;
 			id=166627;
 			atlOffset=17.029785;
 		};
@@ -64648,7 +64648,7 @@ class Mission
 			type="";
 			a=50;
 			b=781.54315;
-			angle=112.99907;
+			angle=112.99906;
 			id=166628;
 			atlOffset=14.263306;
 		};
@@ -65480,7 +65480,7 @@ class Mission
 					type="";
 					a=78.760002;
 					b=89.320999;
-					angle=346.41687;
+					angle=346.41684;
 					id=170785;
 					atlOffset=2.1457672;
 					class CustomAttributes
