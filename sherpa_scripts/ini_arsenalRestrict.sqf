@@ -1,3 +1,4 @@
+if (side player == civilian) exitWith {};
 _myArs = missionNamespace getVariable ((missionNamespace getVariable "groupNamesByCallsigns" get (groupID (group player))) + "_ars");
 {
 	if (_x != _myArs) then {[_x, false] call ace_arsenal_fnc_removeBox; _x lockInventory true;};
