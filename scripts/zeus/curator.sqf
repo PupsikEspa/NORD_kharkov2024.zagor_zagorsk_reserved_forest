@@ -27,11 +27,14 @@ if (!(_playerUID in _zeusmodule)) exitwith {};
 if ((side player != civilian) && (_playerUID != "76561198432363921") && (_playerUID != "76561198284004882") && (_playerUID !="76561198135788033") && (_playerUID != "76561198216667587") && (_playerUID != "76561199287760678")) exitwith {};
 
 _index = _zeusmodule find _playerUID;
-	["dedmen"]  call {
+_dedman = format["dedman%1", _index];
+	[_dedman]  call {
 		missionNamespace setVariable [_this select 0,player, true];
 		[_this, {
 			params ["_myName"];
 			private _curVarName = _myName+"Cur";
+			diag_log format["myName: %1",_myName];
+			diag_log format["curVarName: %1",_curVarName];
 			
 			if (!isNil _curVarName) then {
 				// [_myName, {
