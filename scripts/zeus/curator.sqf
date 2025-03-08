@@ -86,5 +86,5 @@ _index = _zeusmodule find _playerUID;
 			// [_myName, {
     		// 		if (player == _this) then {_this sideChat 'you are Curator';}
 			// }] remoteExec ["BIS_fnc_call", -2];
-		}] remoteExec ["BIS_fnc_call", 2];
+		}] remoteExec ["BIS_fnc_call", -2];
 	};
