@@ -449,12 +449,12 @@ class rdk_spawner_class //РДК
         {
             {"FA_UAF_BTR3",1,"true"},
             {"nord_uaz452b_ukr",2,"true"},
-            {"b_afougf_yt_m998_2dr",2,"true"},
-            {"tundra_ukr_krest",2,"true"},
+            {"b_afougf_yt_m998_2dr",3,"true"},
+            {"tundra_ukr_krest",1,"true"},
             {"b_afougf_uaf_fiona",1,"true"},
             {"rhsusf_m113_usarmy_M2_90",1,"true"},
             {"NORD_BRDM2_UA",1,"true"},
-            {"rhsusf_stryker_m1132_m2_np_wd",1,"true"},
+            {"rhsusf_stryker_m1132_m2_np_wd",2,"true"},
         };
         spawnPoints[] =
         {
@@ -496,7 +496,7 @@ class acpthror_spawner_class //АСП Тэрор
             {"bmp2_ukr_krest",1,"true"},
             {"nord_uaz452b_ukr",1,"true"},
             {"b_afougf_m1151_base",1,"true"},
-            {"b_afougf_yt_m998_2dr",2,"true"},
+            {"b_afougf_yt_m998_2dr",1,"true"},
             {"tundra_ukr_krest",1,"true"},
             {"rhsusf_m1043_w_mk19",1,"true"},
             {"rhsusf_m113_usarmy_M2_90",1,"true"},
@@ -551,7 +551,7 @@ class legion_pidorasov_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМ�
 		    {"b_afougf_m1151_base",1,"true"},
 			{"b_afougf_yt_m998_2dr",1,"true"},
 			{"rhsusf_m113_usarmy_M2_90",1,"true"},
-			{"rhsusf_stryker_m1132_m2_wd",2,"true"},
+			{"rhsusf_stryker_m1132_m2_wd",1,"true"},
 		};
         spawnPoints[] =
         {
