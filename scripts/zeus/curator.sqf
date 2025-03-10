@@ -30,11 +30,14 @@ systemChat "checksPassed";
 
 _index = _zeusmodule find _playerUID;
 _dedman = format["dedman%1", _index];
+systemChat format["dedman: %1", _dedman];
 [_dedman]  call { 
 	
 	missionNamespace setVariable [_this select 0, player, true];
 	[_this, {
 		params ["_myName"]; private _curVarName = _myName+"Cur";
+		systemChat format["_myName: %1", _myName];
+		systemChat format["_curVarName: %1", _curVarName];
 
 		["infunc"] remoteExec ["systemChat", -2];
 
