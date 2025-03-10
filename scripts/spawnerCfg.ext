@@ -15,7 +15,7 @@ class common_rf_spawner_class //общий рф
 			{"nord_RUS_MSV_atz75557_north",1,"true"},
 			{"nord_RUS_MSV_mtoam22_north",1,"true"},
 			{"RUS_VDV_2b14",1,"true"},
-            {"tbd_120mm_pm_43",1,"true"},
+            {"rhs_D30_msv",1,"true"},
 			{"nord_RUS_VKS_mi8amtsh_Unrmed_north",2,"true"},
 			{"nord_mtlb_rus_north",10,"true"},
 		};
@@ -57,7 +57,7 @@ class logistic_rf_spawner_class //ящики рф
             {"rhs_7ya37_1_single",-1,"true", "9М131Ф"},
             {"rhs_7ya37_1_single",-1,"true", "82мм Мина Дым"},
             {"rhs_7ya37_1_single",-1,"true", "82мм Освет"},
-            {"rhs_7ya37_1_single",-1,"true", "82мм Фугас"},
+            {"rhs_7ya37_1_single", 2,"true", "82мм Фугас"},
             {"rhs_7ya37_1_single",-1,"true", "120 мм заряд 1"},
             {"rhs_7ya37_1_single",-1,"true", "120 мм заряд 2"},
             {"rhs_7ya37_1_single",-1,"true", "120 мм заряд 3"},
@@ -76,8 +76,7 @@ class logistic_rf_spawner_class //ящики рф
 			{"ACE_Wheel",-1,"true"},
 			{"tbd_mortar_120mm_box",-1,"true"},
 			{"tbd_mortars_100mm_box_he",-1,"true"},
-            {"tbd_2b9_vasilek_magazine",2,"true"},
-            {"tbd_mortar_82mm_box_he",-1,"true"}
+            {"tbd_2b9_vasilek_magazine",2,"true"}
 
         };
         spawnPoints[] =
@@ -325,7 +324,7 @@ class common_vsu_spawner_class //общий всу
 			{"NORD_KRAZ_FUEL",1,"true"},
 			{"NORD_KRAZ_6322_repair	",1,"true"},
 			{"RUS_VDV_2b14",1,"true"},
-            {"tbd_120mm_pm_43",1,"true"},
+            {"rhs_D30_msv",1,"true"},
 			{"b_afougf_Mi8MTV3_Cargo",2,"true"},
 			{"nord_mtlb_ukr",10,"true"},
 		};
@@ -367,7 +366,7 @@ class logistic_vsu_spawner_class //ящики всу
             {"rhs_7ya37_1_single",-1,"true", "9М131Ф"},
             {"rhs_7ya37_1_single",-1,"true", "82мм Мина Дым"},
             {"rhs_7ya37_1_single",-1,"true", "82мм Освет"},
-            {"rhs_7ya37_1_single",-1,"true", "82мм Фугас"},
+            {"rhs_7ya37_1_single", 2,"true", "82мм Фугас"},
             {"rhs_7ya37_1_single",-1,"true", "120 мм заряд 1"},
             {"rhs_7ya37_1_single",-1,"true", "120 мм заряд 2"},
             {"rhs_7ya37_1_single",-1,"true", "120 мм заряд 3"},
@@ -403,8 +402,7 @@ class logistic_vsu_spawner_class //ящики всу
 			{"ACE_Wheel",-1,"true"},
 			{"tbd_mortar_120mm_box",-1,"true"},
 			{"tbd_mortars_100mm_box_he",-1,"true"},
-            {"tbd_2b9_vasilek_magazine",2,"true"},
-            {"tbd_mortar_82mm_box_he",-1,"true"}
+            {"tbd_2b9_vasilek_magazine",2,"true"}
             
         };
         spawnPoints[] =

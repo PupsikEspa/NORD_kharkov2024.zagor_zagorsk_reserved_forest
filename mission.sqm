@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=170833;
+		nextID=170834;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=95988;
+		nextID=96095;
 	};
 	class Camera
 	{
-		pos[]={10839.5,897.23999,6703.2231};
-		dir[]={0.20273039,-0.38965711,0.89838928};
-		up[]={0.085775681,0.92095327,0.3801131};
-		aside[]={0.97548878,7.7825462e-08,-0.22012775};
+		pos[]={10779.41,283.51901,9042.791};
+		dir[]={-0.21257097,-0.57578069,-0.78953063};
+		up[]={-0.14969566,0.81758666,-0.55600089};
+		aside[]={-0.96564806,-7.2475814e-08,0.259987};
 	};
 };
 binarizationWanted=0;
@@ -106,7 +106,7 @@ class AddonsMetaData
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item2
@@ -144,7 +144,7 @@ class AddonsMetaData
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item8
@@ -165,7 +165,7 @@ class AddonsMetaData
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item11
@@ -273,7 +273,7 @@ class AddonsMetaData
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item28
@@ -346,7 +346,7 @@ class AddonsMetaData
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item39
@@ -375,7 +375,7 @@ class AddonsMetaData
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
 		class Item44
@@ -447,7 +447,7 @@ class CustomAttributes
 		name="trencher_main";
 		class Attribute0
 		{
-			property="trencher_main_hideAreas";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -486,7 +486,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_terrainPoints";
 			expression="false";
 			class Value
 			{
@@ -499,7 +499,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_terrainPoints";
+			property="trencher_main_hideAreas";
 			expression="false";
 			class Value
 			{
@@ -64474,7 +64474,7 @@ class Mission
 			type="";
 			a=50;
 			b=561.12067;
-			angle=345.26172;
+			angle=345.26169;
 			id=166616;
 			atlOffset=24.875748;
 		};
@@ -64616,7 +64616,7 @@ class Mission
 			type="";
 			a=50;
 			b=821.14404;
-			angle=113.24755;
+			angle=113.24754;
 			id=166627;
 			atlOffset=10.674515;
 		};
@@ -64629,7 +64629,7 @@ class Mission
 			type="";
 			a=50;
 			b=618.69629;
-			angle=314.03137;
+			angle=314.03134;
 			id=166629;
 			atlOffset=-6.706131;
 		};
@@ -65219,7 +65219,7 @@ class Mission
 			type="";
 			a=50;
 			b=268.8526;
-			angle=78.322578;
+			angle=78.322571;
 			id=170792;
 			atlOffset=19.311279;
 		};
@@ -65258,7 +65258,7 @@ class Mission
 			type="";
 			a=50;
 			b=414.41873;
-			angle=301.37003;
+			angle=301.37;
 			id=170796;
 			atlOffset=16.625534;
 		};
@@ -65519,7 +65519,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={11035.832,228.84169,8361.7021};
-					angle=3.6170866;
+					angle=3.6170864;
 					class Attributes
 					{
 						sizeA=86.983719;
@@ -65836,7 +65836,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={11533.701,235.49158,8136.1426};
-					angle=3.6170864;
+					angle=3.6170862;
 					class Attributes
 					{
 						sizeA=86.983719;
@@ -65915,7 +65915,7 @@ class Mission
 			colorName="ColorBlue";
 			a=20;
 			b=561.82092;
-			angle=180.78801;
+			angle=180.78799;
 			id=170823;
 			atlOffset=10.432495;
 			class CustomAttributes
@@ -66031,7 +66031,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=590.57764;
-			angle=215.65799;
+			angle=215.65797;
 			id=170827;
 			atlOffset=14.968552;
 			class CustomAttributes
@@ -66089,7 +66089,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=1008.8831;
-			angle=302.25595;
+			angle=302.25592;
 			id=170828;
 			atlOffset=7.8943176;
 			class CustomAttributes
@@ -66147,7 +66147,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=453.45755;
-			angle=208.0921;
+			angle=208.09209;
 			id=170829;
 			atlOffset=6.4641571;
 			class CustomAttributes
@@ -66263,7 +66263,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=949.06049;
-			angle=90.185074;
+			angle=90.185066;
 			id=170831;
 			atlOffset=4.6837158;
 			class CustomAttributes
@@ -66321,7 +66321,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=641.60352;
-			angle=181.69571;
+			angle=181.69569;
 			id=170832;
 			atlOffset=8.6949158;
 			class CustomAttributes
