@@ -3,7 +3,7 @@ while {true} do {
     _name = format ["%1 (%2)", name player, getPlayerUID player];
     _current_curators = missionNamespace getVariable ["current_curators", []];
 
-    if (!(_name in _current_curators)) then {
+    if ((!(_name in _current_curators)) && (profileNamespace getVariable ["BIS_CurMOD_edit", true])) then {
         _current_curators pushBack _name;
         missionNamespace setVariable["current_curators", _current_curators, true];
     };
