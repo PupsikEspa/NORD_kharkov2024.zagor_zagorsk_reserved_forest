@@ -34,6 +34,8 @@ systemChat format["dedman: %1", _dedman];
 [_dedman]  call { 
 	
 	missionNamespace setVariable [_this select 0, player, true];
+	systemChat format["_this select 0: %1", (_this select 0)];
+	
 	[_this, {
 		params ["_myName"]; private _curVarName = _myName+"Cur";
 		systemChat format["_myName: %1", _myName];
