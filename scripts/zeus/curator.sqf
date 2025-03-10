@@ -33,6 +33,11 @@ _dedman = format["dedman%1", _index];
 	missionNamespace setVariable [_this select 0, player, true];
 	[_this, {
 		params ["_myName"]; private _curVarName = _myName+"Cur";
+
+		if (!isNil _curVarName) then {
+			deleteVehicle (missionNamespace getVariable [_curVarName, objNull]);
+			missionNamespace setVariable [_curVarName, nil, true];
+		};
 		
 		if (isNil _curVarName) then {
 			[-1, compile format["if (player == %1) then {%1 sideChat 'creating Curator';}", _myName]] call CBA_fnc_globalExecute;
