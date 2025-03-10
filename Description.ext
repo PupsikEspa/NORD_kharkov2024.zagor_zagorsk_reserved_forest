@@ -42,10 +42,6 @@ class CfgRemoteExec
 		// mode = 1;
 		// class Nord_fnc_initPlayerServer { allowedTargets = 2; };
 	};
-	class Commands
-	{
-		mode = 2;
-	};
 };
 
 //Discord info
