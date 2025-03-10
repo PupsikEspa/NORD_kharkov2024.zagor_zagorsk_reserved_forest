@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=96202;
+		nextID=96416;
 	};
 	class Camera
 	{
 		pos[]={10779.41,283.51901,9042.791};
-		dir[]={-0.21257097,-0.57578069,-0.78953063};
-		up[]={-0.14969566,0.81758666,-0.55600089};
-		aside[]={-0.96564806,-7.2475814e-08,0.259987};
+		dir[]={-0.2125643,-0.57576084,-0.78950369};
+		up[]={-0.14968623,0.81761807,-0.5559628};
+		aside[]={-0.96561408,1.4901161e-08,0.2599799};
 	};
 };
 binarizationWanted=0;
@@ -87,8 +87,7 @@ addons[]=
 	"emr_main",
 	"ace_logistics_wirecutter",
 	"rhs_main",
-	"A3_Characters_F_Exp_Civil",
-	"A3_Modules_F_Multiplayer"
+	"A3_Characters_F_Exp_Civil"
 };
 class AddonsMetaData
 {
@@ -473,7 +472,7 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="trencher_main_trenchPieces";
+			property="trencher_main_simulatedObjects";
 			expression="false";
 			class Value
 			{
@@ -499,7 +498,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="trencher_main_simulatedObjects";
+			property="trencher_main_trenchPieces";
 			expression="false";
 			class Value
 			{
@@ -64616,7 +64615,7 @@ class Mission
 			type="";
 			a=50;
 			b=821.14404;
-			angle=113.24754;
+			angle=113.24751;
 			id=166627;
 			atlOffset=10.674515;
 		};
@@ -64629,7 +64628,7 @@ class Mission
 			type="";
 			a=50;
 			b=618.69629;
-			angle=314.03131;
+			angle=314.03125;
 			id=166629;
 			atlOffset=-6.706131;
 		};
@@ -65266,644 +65265,8 @@ class Mission
 		{
 			dataType="Layer";
 			name="сектор1";
-			class Entities
-			{
-				items=12;
-				class Item0
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11046.012,228.58969,8349.7949};
-						angles[]={6.2711902,0,0.011995304};
-					};
-					id=170812;
-					type="SideBLUFOR_F";
-				};
-				class Item1
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11052.178,228.73518,8349.8926};
-						angles[]={6.2771854,0,0.043970551};
-					};
-					id=170813;
-					type="SideOPFOR_F";
-				};
-				class Item2
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11049.781,228.76241,8359.0332};
-						angles[]={6.259192,0,0.019996032};
-					};
-					id=170814;
-					type="LocationArea_F";
-					atlOffset=-1.5258789e-05;
-				};
-				class Item3
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11049.57,228.66147,8353.8652};
-						angles[]={6.2771854,0,0.0039967569};
-					};
-					areaSize[]={9.2050781,0,7.2915039};
-					flags=1;
-					id=170815;
-					type="ModuleSector_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleSector_F_DefaultOwner";
-							expression="_this setVariable ['DefaultOwner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="-1";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleSector_F_CostInfantry";
-							expression="_this setVariable ['CostInfantry',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="1";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleSector_F_OnOwnerChange";
-							expression="_this setVariable ['OnOwnerChange',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleSector_F_ScoreReward";
-							expression="_this setVariable ['ScoreReward',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleSector_F_CostWheeled";
-							expression="_this setVariable ['CostWheeled',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="2";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ModuleSector_F_OwnerLimit";
-							expression="_this setVariable ['OwnerLimit',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="ModuleSector_F_TaskTitle";
-							expression="_this setVariable ['TaskTitle',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ModuleSector_F_Designation";
-							expression="_this setVariable ['Designation',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ModuleSector_F_TaskOwner";
-							expression="_this setVariable ['TaskOwner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="ModuleSector_F_CostAir";
-							expression="_this setVariable ['CostAir',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="2";
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="ModuleSector_F_CostPlayers";
-							expression="_this setVariable ['CostPlayers',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="2";
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="ModuleSector_F_CostTracked";
-							expression="_this setVariable ['CostTracked',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="4";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="ModuleSector_F_TaskDescription";
-							expression="_this setVariable ['TaskDescription',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="ModuleSector_F_CostWater";
-							expression="_this setVariable ['CostWater',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="ModuleSector_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="1";
-								};
-							};
-						};
-						nAttributes=15;
-					};
-				};
-				class Item4
-				{
-					dataType="Trigger";
-					position[]={11035.832,228.84169,8361.7021};
-					angle=3.6170862;
-					class Attributes
-					{
-						sizeA=86.983719;
-						sizeB=92.031998;
-						sizeC=50;
-						isRectangle=1;
-					};
-					id=170811;
-					type="EmptyDetectorArea10x10";
-					atlOffset=-0.013931274;
-				};
-				class Item5
-				{
-					dataType="Marker";
-					position[]={11152.393,232.2177,8403.3789};
-					name="marker_465";
-					text="Сектор 1";
-					type="mil_dot";
-					id=170816;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="markerblink";
-							expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item6
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11543.881,234.09998,8124.2354};
-						angles[]={6.2232571,0,6.251195};
-					};
-					id=170818;
-					type="SideBLUFOR_F";
-					atlOffset=3.0517578e-05;
-				};
-				class Item7
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11550.047,233.81267,8124.333};
-						angles[]={6.2571907,0,0};
-					};
-					id=170819;
-					type="SideOPFOR_F";
-					atlOffset=1.5258789e-05;
-				};
-				class Item8
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11547.65,234.43907,8133.4736};
-						angles[]={6.1736255,0,6.2631865};
-					};
-					id=170820;
-					type="LocationArea_F";
-					atlOffset=-1.5258789e-05;
-				};
-				class Item9
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={11547.439,234.14867,8128.3057};
-						angles[]={6.2472029,0,6.2053428};
-					};
-					areaSize[]={9.2050781,0,7.2915039};
-					flags=1;
-					id=170821;
-					type="ModuleSector_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleSector_F_DefaultOwner";
-							expression="_this setVariable ['DefaultOwner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="-1";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleSector_F_CostInfantry";
-							expression="_this setVariable ['CostInfantry',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="1";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleSector_F_OnOwnerChange";
-							expression="_this setVariable ['OnOwnerChange',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleSector_F_ScoreReward";
-							expression="_this setVariable ['ScoreReward',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleSector_F_CostWheeled";
-							expression="_this setVariable ['CostWheeled',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="2";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ModuleSector_F_OwnerLimit";
-							expression="_this setVariable ['OwnerLimit',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="ModuleSector_F_TaskTitle";
-							expression="_this setVariable ['TaskTitle',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ModuleSector_F_Designation";
-							expression="_this setVariable ['Designation',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ModuleSector_F_TaskOwner";
-							expression="_this setVariable ['TaskOwner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="ModuleSector_F_CostAir";
-							expression="_this setVariable ['CostAir',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="2";
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="ModuleSector_F_CostPlayers";
-							expression="_this setVariable ['CostPlayers',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="2";
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="ModuleSector_F_CostTracked";
-							expression="_this setVariable ['CostTracked',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="4";
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="ModuleSector_F_TaskDescription";
-							expression="_this setVariable ['TaskDescription',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="ModuleSector_F_CostWater";
-							expression="_this setVariable ['CostWater',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="0";
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="ModuleSector_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="1";
-								};
-							};
-						};
-						nAttributes=15;
-					};
-				};
-				class Item10
-				{
-					dataType="Trigger";
-					position[]={11533.701,235.49158,8136.1426};
-					angle=3.6170859;
-					class Attributes
-					{
-						sizeA=86.983719;
-						sizeB=92.031998;
-						sizeC=50;
-						isRectangle=1;
-					};
-					id=170822;
-					type="EmptyDetectorArea10x10";
-				};
-				class Item11
-				{
-					dataType="Marker";
-					position[]={11646.121,234.422,8174.0811};
-					name="marker_466";
-					text="Сектор 2";
-					type="mil_dot";
-					id=170826;
-					atlOffset=-0.00042724609;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="markerblink";
-							expression="if ((_value # 0 isNotEqualTo 0) || (_value # 1 isNotEqualTo 0)) then {[_this, _value # 0, _value # 1] spawn BIS_fnc_blinkMarker};";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-			};
 			id=170817;
-			atlOffset=-0.011520386;
+			atlOffset=-201.53;
 		};
 		class Item282
 		{
@@ -65915,7 +65278,7 @@ class Mission
 			colorName="ColorBlue";
 			a=20;
 			b=561.82092;
-			angle=180.78798;
+			angle=180.78792;
 			id=170823;
 			atlOffset=10.432495;
 			class CustomAttributes
@@ -66147,7 +65510,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=453.45755;
-			angle=208.09207;
+			angle=208.092;
 			id=170829;
 			atlOffset=6.4641571;
 			class CustomAttributes
@@ -66263,7 +65626,7 @@ class Mission
 			colorName="ColorCIV";
 			a=20;
 			b=949.06049;
-			angle=90.185059;
+			angle=90.185051;
 			id=170831;
 			atlOffset=4.6837158;
 			class CustomAttributes
@@ -66367,97 +65730,6 @@ class Mission
 					};
 				};
 				nAttributes=1;
-			};
-		};
-	};
-	class Connections
-	{
-		class LinkIDProvider
-		{
-			nextID=8;
-		};
-		class Links
-		{
-			items=8;
-			class Item0
-			{
-				linkID=0;
-				item0=170812;
-				item1=170815;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1
-			{
-				linkID=1;
-				item0=170813;
-				item1=170815;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item2
-			{
-				linkID=2;
-				item0=170814;
-				item1=170815;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item3
-			{
-				linkID=3;
-				item0=170814;
-				item1=170811;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item4
-			{
-				linkID=4;
-				item0=170818;
-				item1=170821;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item5
-			{
-				linkID=5;
-				item0=170819;
-				item1=170821;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item6
-			{
-				linkID=6;
-				item0=170820;
-				item1=170821;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item7
-			{
-				linkID=7;
-				item0=170820;
-				item1=170822;
-				class CustomData
-				{
-					type="Sync";
-				};
 			};
 		};
 	};
