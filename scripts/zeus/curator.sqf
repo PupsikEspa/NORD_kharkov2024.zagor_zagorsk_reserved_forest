@@ -26,6 +26,8 @@ _zeusmodule = [
 if (!(_playerUID in _zeusmodule)) exitwith {};
 if ((side player != civilian) && (_playerUID != "76561198432363921") && (_playerUID != "76561198284004882") && (_playerUID !="76561198135788033") && (_playerUID != "76561198216667587") && (_playerUID != "76561199287760678")) exitwith {};
 
+systemChat "checksPassed";
+
 _index = _zeusmodule find _playerUID;
 _dedman = format["dedman%1", _index];
 [_dedman]  call { 
@@ -34,12 +36,16 @@ _dedman = format["dedman%1", _index];
 	[_this, {
 		params ["_myName"]; private _curVarName = _myName+"Cur";
 
+		systemChat "infunc";
+
 		if (!isNil _curVarName) then {
+			systemChat "!isnil";
 			deleteVehicle (missionNamespace getVariable [_curVarName, objNull]);
 			missionNamespace setVariable [_curVarName, nil, true];
 		};
 		
 		if (isNil _curVarName) then {
+			systemChat "+isnil";
 			[-1, compile format["if (player == %1) then {%1 sideChat 'creating Curator';}", _myName]] call CBA_fnc_globalExecute;
 			if (isNil "DedmenCur_group") then {DedmenCur_group = creategroup sideLogic;};
 			private _myCurObject = DedmenCur_group createunit["ModuleCurator_F", [0, 90, 90], [], 0.5, "NONE"];	//Logic Server
