@@ -36,16 +36,16 @@ _dedman = format["dedman%1", _index];
 	[_this, {
 		params ["_myName"]; private _curVarName = _myName+"Cur";
 
-		systemChat "infunc";
+		["infunc"] remoteExec ["systemChat", -2];
 
 		if (!isNil _curVarName) then {
-			systemChat "!isnil";
+			["!isnil"] remoteExec ["systemChat", -2];
 			deleteVehicle (missionNamespace getVariable [_curVarName, objNull]);
 			missionNamespace setVariable [_curVarName, nil, true];
 		};
 		
 		if (isNil _curVarName) then {
-			systemChat "+isnil";
+			["+isnil"] remoteExec ["systemChat", -2];
 			[-1, compile format["if (player == %1) then {%1 sideChat 'creating Curator';}", _myName]] call CBA_fnc_globalExecute;
 			if (isNil "DedmenCur_group") then {DedmenCur_group = creategroup sideLogic;};
 			private _myCurObject = DedmenCur_group createunit["ModuleCurator_F", [0, 90, 90], [], 0.5, "NONE"];	//Logic Server
