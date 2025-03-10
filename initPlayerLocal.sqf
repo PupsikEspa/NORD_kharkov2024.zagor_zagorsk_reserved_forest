@@ -28,7 +28,7 @@ if(!hasInterface) exitWith {}; // If headless then exit
 [] execVM "scripts\countLocalFPS.sqf";
 [] execVM "scripts\addDonate.sqf";
 [] execVM "scripts\commander.sqf";
-[] execVM "scripts\zeus\curator.sqf";
+//[] execVM "scripts\zeus\curator.sqf";
 0 spawn {[] execVM "sherpa_scripts\ini_arsenalRestrict.sqf"};
 
 _getPKPinfo = ["Инфо о ПКП", "Инфо о ПКП", "", {
