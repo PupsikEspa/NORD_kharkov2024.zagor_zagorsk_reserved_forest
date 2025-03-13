@@ -11,7 +11,7 @@ class common_rf_spawner_class //общий рф
 			{"nord_RUS_MSV_kamaz4350_north",10,"true"},
 			{"nord_KAMAZ63501_AT_EMR_north",1,"true"},
 			{"nord_KAMAZ5350_379_ZU23_north",1,"true"},
-			{"nord_KAMAZ5350_REAMMO_north",3,"true"},
+			{"nord_KAMAZ5350_REAMMO_north",1,"true"},
 			{"nord_RUS_MSV_atz75557_north",1,"true"},
 			{"nord_RUS_MSV_mtoam22_north",1,"true"},
 			{"RUS_VDV_2b14",1,"true"},
@@ -319,7 +319,7 @@ class common_vsu_spawner_class //общий всу
         {
 			{"NORD_KRAZ_TENT",10,"true"},
 			{"b_afougf_old_gaz66_zu23",1,"true"},
-			{"NORD_KRAZ_6322_ammo",3,"true"},
+			{"NORD_KRAZ_6322_ammo",1,"true"},
 			{"NORD_KRAZ_FUEL",1,"true"},
 			{"NORD_KRAZ_6322_repair	",1,"true"},
 			{"RUS_VDV_2b14",1,"true"},
