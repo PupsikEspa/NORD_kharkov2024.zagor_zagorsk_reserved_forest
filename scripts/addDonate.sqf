@@ -13,7 +13,8 @@ _donateMap = createHashMapFromArray [
 	["76561199042520076", ["nord_tv110_ermak"]],
 	["76561198908535754", ["nord_tv110_knyazi"]],
 	["76561198338806858", ["nord_tv110_cikada"]],
-	["76561199002226480", ["nord_tv110_flamberg"]]
+	["76561199002226480", ["nord_tv110_flamberg"]],
+	["76561198869532056", ["nord_tv110_vega"]]
 ];
 
 _myDonate = _donateMap getOrDefault [(getPlayerUID player), []];
