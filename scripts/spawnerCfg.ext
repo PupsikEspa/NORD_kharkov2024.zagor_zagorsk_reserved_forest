@@ -466,7 +466,6 @@ class ohbr3_spawner_class //1-й МехБат 3 ОШБр
         displayName = "Запрос техники 1-й МехБат 3 ОШБр";
         vehicles[] =
         {
-            {"nord_mtlb_rus_north",10,"true"}
         };
         spawnPoints[] =
         {
