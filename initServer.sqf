@@ -87,6 +87,7 @@ if (isServer) then {
 
 		    if (_unit isKindOf "CAManBase" && {side _unit in [EAST, WEST]}) then {
 		        _unit addItem "ItemGPS";
+				_unit assignItem "ItemGPS";
 		    };
 		}];
 		publicVariableServer "sherpa_event_respawn_gps";
