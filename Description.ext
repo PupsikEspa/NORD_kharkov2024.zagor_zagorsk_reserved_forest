@@ -82,3 +82,27 @@ class CfgDebriefing
 		picture = "KIA";
 	};
 };
+
+class CfgSounds
+{
+    sounds[] = {};
+    
+    class battle_start
+    {
+        name = "battle_start";
+        sound[] = {"audio\battle_start.ogg", 1, 1};
+        titles[] = {};
+    };
+  	class rus_victory
+    {
+        name = "rus_victory";
+        sound[] = {"audio\rus_victory.ogg", 1, 1};
+        titles[] = {};
+    };
+  	class ukr_victory
+    {
+        name = "ukr_victory";
+        sound[] = {"audio\ukr_victory.ogg", 1, 1};
+        titles[] = {};
+    };
+};

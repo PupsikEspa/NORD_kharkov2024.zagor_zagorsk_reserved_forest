@@ -81,7 +81,15 @@ if (isServer) then {
 			        if (isNull _instigator) then {
 				_instigator = _killer
 			};
-		}];    
+		}]; 
+		sherpa_event_respawn_gps = addMissionEventHandler ["EntityRespawned", {
+		    params ["_unit", "_corpse"];
+
+		    if (_unit isKindOf "CAManBase" && {side _unit in [EAST, WEST]}) then {
+		        _unit addItem "ItemGPS";
+		    };
+		}];
+		publicVariableServer "sherpa_event_respawn_gps";
 		publicVariableServer "sherpa_event_kill_fix";
 		missionNamespace setVariable ["isEvent", false, true];
 	};
