@@ -6,4 +6,4 @@ soborahmat_plate setObjectTextureGlobal [0, "scripts\plates_rus\soborahmat_plate
 obrcpn2_plate setObjectTextureGlobal [0, "scripts\plates_rus\obrcpn2_plate_ca.paa"];
 obrcpn16_plate setObjectTextureGlobal [0, "scripts\plates_rus\obrcpn16_plate_ca.paa"];
 polk204ahmat_plate setObjectTextureGlobal [0, "scripts\plates_rus\polk204ahmat_plate_ca.paa"];
-mcp272_plate setObjectTextureGlobal [0, "scripts\plates_rus\mcp272_plate_ca.paa"];
+//mcp272_plate setObjectTextureGlobal [0, "scripts\plates_rus\mcp272_plate_ca.paa"];

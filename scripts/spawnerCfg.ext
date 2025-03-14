@@ -113,7 +113,7 @@ class odhbr83_spawner_class //83 ОДШБр
     };
 };
 
-class mcp272_spawner_class //272 мсп
+class mcp272_spawner_class //272 мсп (пусто)
 {
     conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == mcp272_spawner)"; // "(playerSide in [west,independent])"
     
@@ -122,18 +122,12 @@ class mcp272_spawner_class //272 мсп
         displayName = "Запрос техники 272 мсп";
         vehicles[] =
         {
-			{"nord_uaz452b_north",1,"true"},
-			{"nord_UAZ_03_transport_north",1,"true"},
-			{"nord_tundra_rus_north",1,"true"},
-			{"nord_BRDM2_north",1,"true"},
-			{"NORD_Tigr_M_233114_Camo_KORD_RU_north",1,"true"},
-			{"nord_RUS_MSV_btr80_north",1,"true"},
 		};
         spawnPoints[] =
         {
             {"1",{"mcp272_spawnplace"}}
         };
-        
+
     };
 };
 
@@ -463,7 +457,7 @@ class rdk_spawner_class //РДК
     };
 };
 
-class ohbr3_spawner_class //1-й МехБат 3 ОШБр (НЕТУ)
+class ohbr3_spawner_class //1-й МехБат 3 ОШБр
 {
     conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == ohbr3_spawner)"; // "(playerSide in [west,independent])"
     
@@ -472,7 +466,7 @@ class ohbr3_spawner_class //1-й МехБат 3 ОШБр (НЕТУ)
         displayName = "Запрос техники 1-й МехБат 3 ОШБр";
         vehicles[] =
         {
-            
+            {"nord_mtlb_rus_north",10,"true"}
         };
         spawnPoints[] =
         {
