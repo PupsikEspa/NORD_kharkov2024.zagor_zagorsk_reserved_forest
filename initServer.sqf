@@ -30,7 +30,8 @@ if (isServer) then {
 		["2-й ОБрСпН","obrcpn2"],
 		["16 ОБрСпН","obrcpn16"],
 		["155 ОБрМП","obrmp155"],
-		["3 ОШБр","ohbr3"]
+		["3 ОШБр","ohbr3"],
+		["200 ОМСБр","omcbr200"]
 	];
 	
 	missionNamespace setVariable ["groupNamesByCallsigns", _groupNamesMap, true];

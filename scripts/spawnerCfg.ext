@@ -115,11 +115,11 @@ class odhbr83_spawner_class //83 ОДШБр
     };
 };
 
-class mcp272_spawner_class //272 мсп (пусто)
+class omcbr200_spawner_class //200 ОМСБр
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == mcp272_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == omcbr200_spawner)"; // "(playerSide in [west,independent])"
     
-    class mcp272_spawner_class
+    class omcbr200_spawner_class
 	{
         displayName = "Запрос техники 272 мсп";
         vehicles[] =
@@ -127,7 +127,7 @@ class mcp272_spawner_class //272 мсп (пусто)
 		};
         spawnPoints[] =
         {
-            {"1",{"mcp272_spawnplace"}}
+            {"1",{"omcbr200_spawnplace"}}
         };
 
     };
