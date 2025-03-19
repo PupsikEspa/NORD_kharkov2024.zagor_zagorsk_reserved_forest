@@ -444,7 +444,7 @@ class rdk_spawner_class //РДК
         {
             {"nord_FA_UAF_BTR3",1,"true"},
             {"nord_uaz452b_ukr",2,"true"},
-            {"nord_b_afougf_m998_2dr",2"true"},
+            {"nord_b_afougf_m998_2dr",2,"true"},
             {"tundra_ukr_krest",1,"true"},
             {"nord_b_afougf_uaf_fiona",1,"true"},
             {"rhsusf_m113_usarmy_M2_90",1,"true"},
