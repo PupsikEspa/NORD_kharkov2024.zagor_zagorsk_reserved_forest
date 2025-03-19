@@ -21,7 +21,6 @@ _arsArray = [
 ];
 
 _myArs = missionNamespace getVariable ((missionNamespace getVariable "groupNamesByCallsigns" get (groupID (group player))) + "_ars");
-
 _arsArray = _arsArray - [_myArs];
 
 {
