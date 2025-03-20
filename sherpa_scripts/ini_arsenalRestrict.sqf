@@ -17,7 +17,7 @@ _arsArray = [
 	rdk_ars,
 	acpthror_ars,
 	ohbr3_ars,
-	omcbr200_ars
+	mcp15_ars
 ];
 
 _myArs = missionNamespace getVariable ((missionNamespace getVariable "groupNamesByCallsigns" get (groupID (group player))) + "_ars");

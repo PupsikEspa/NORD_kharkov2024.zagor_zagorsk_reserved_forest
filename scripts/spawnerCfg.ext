@@ -115,19 +115,20 @@ class odhbr83_spawner_class //83 ОДШБр
     };
 };
 
-class omcbr200_spawner_class //200 ОМСБр
+class mcp15_spawner_class //15 МСП
 {
-    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == omcbr200_spawner)"; // "(playerSide in [west,independent])"
+    conditionToAccess = "(side player == civilian) || ((missionNamespace getVariable ((missionNamespace getVariable ""groupNamesByCallsigns"" get (groupID (group player))) + ""_spawner"")) == mcp15_spawner)"; // "(playerSide in [west,independent])"
     
-    class omcbr200_spawner_class
+    class mcp15_spawner_class
 	{
-        displayName = "Запрос техники 272 мсп";
+        displayName = "Запрос техники 15 МСП";
         vehicles[] =
         {
+            {"nord_tigr_atgm_north",2222,"true"}
 		};
         spawnPoints[] =
         {
-            {"1",{"omcbr200_spawnplace"}}
+            {"1",{"mcp15_spawnplace"}}
         };
 
     };
