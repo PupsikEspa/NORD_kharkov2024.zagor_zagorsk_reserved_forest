@@ -468,7 +468,7 @@ class ohbr3_spawner_class //1-й МехБат 3 ОШБр
         displayName = "Запрос техники 1-й МехБат 3 ОШБр";
         vehicles[] =
         {
-		{"nord_FA_UAF_BTR3",1,"true"},
+		{"nord_FA_UAF_BTR4",1,"true"},
         {"nord_uaz452b_ukr",1,"true"},
         {"nord_b_afougf_m998_2dr",2,"true"},
         {"tundra_ukr_krest",2,"true"},
