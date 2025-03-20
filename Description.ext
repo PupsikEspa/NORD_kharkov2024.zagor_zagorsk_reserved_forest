@@ -6,7 +6,6 @@ class CfgClient {
 	
 };
 
-
 enableDebugConsole = 1;
 respawn="BASE";
 respawnButton=1;
