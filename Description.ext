@@ -6,7 +6,7 @@ class CfgClient {
 	
 };
 
-enableDebugConsole[] = {"76561199425551901"};
+enableDebugConsole = 1;
 respawn="BASE";
 respawnButton=1;
 respawnOnStart=-1;
