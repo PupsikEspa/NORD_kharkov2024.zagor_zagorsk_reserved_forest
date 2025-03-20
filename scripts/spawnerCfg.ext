@@ -423,7 +423,7 @@ class ohb92_spawner_class //92-й ОШБ
         displayName = "Запрос техники 92-й ОШБ";
         vehicles[] =
         {
-		{"b_afougf_uaf_fiona",1,"true"},
+		{"nord_b_afougf_uaf_fiona",1,"true"},
         };
         spawnPoints[] =
         {
@@ -442,14 +442,14 @@ class rdk_spawner_class //РДК
         displayName = "Запрос техники РДК";
         vehicles[] =
         {
-		{"bmp2_ukr_krest",1,"true"},
+		{"nord_b_afougf_bmp2",1,"true"},
         {"nord_uaz452b_ukr",1,"true"},
-        {"b_afougf_yt_m998_2dr",2,"true"},
+        {"nord_b_afougf_m998_2dr",2,"true"},
         {"tundra_ukr_krest",2,"true"},
-        {"rhsusf_m1151_m2crows_usarmy_wd",2,"true"},
-        {"rhsusf_stryker_m1132_m2_wd",1,"true"},
-		{"m113_ukr_krest",1,"true"}
-		{"hmmwv_m2_krest ",1,"true"},
+        {"nord_rhsusf_m1151_m2crows_usarmy_wd",2,"true"},
+        {"nord_rhsusf_stryker_m1132_m2_wd",1,"true"},
+		{"nord_m113_krest",1,"true"}
+		{"nord_rhsusf_m1151_m2_v2_usarmy_wd ",1,"true"},
         };
         spawnPoints[] =
         {
@@ -468,14 +468,14 @@ class ohbr3_spawner_class //1-й МехБат 3 ОШБр
         displayName = "Запрос техники 1-й МехБат 3 ОШБр";
         vehicles[] =
         {
-		{"FA_UAF_BTR4",1,"true"},
+		{"nord_FA_UAF_BTR3",1,"true"},
         {"nord_uaz452b_ukr",1,"true"},
-        {"b_afougf_yt_m998_2dr",2,"true"},
+        {"nord_b_afougf_m998_2dr",2,"true"},
         {"tundra_ukr_krest",2,"true"},
-        {"rhsusf_m966_w",1,"true"},
+        {"nord_rhsusf_m966_w",1,"true"},
         {"NORD_BRDM2_UA",1,"true"},
-        {"b_afougf_uaf_novator",2,"true"},
-		{"hmmwv_m2_krest ",1,"true"},
+        {"nord_b_afougf_uaf_novator",2,"true"},
+		{"nord_rhsusf_m1151_m2_v2_usarmy_wd ",1,"true"},
         };
         spawnPoints[] =
         {
@@ -514,14 +514,14 @@ class gurkraken_spawner_class //ГУР Кракен
         displayName = "Запрос техники ГУР Кракен";
         vehicles[] =
         {
-		{"bmp2_ukr_krest",1,"true"},
-        {"FA_UAF_BTR3",1,"true"},
+		{"nord_b_afougf_bmp2",1,"true"},
+        {"nord_FA_UAF_BTR3",1,"true"},
         {"nord_uaz452b_ukr",1,"true"},
-        {"b_afougf_m1151_base",1,"true"},
-        {"rhsusf_m1043_w_mk19",1,"true"},
-        {"b_afougf_yt_m998_2dr",3,"true"},
-        {"rhsusf_m966_w",1,"true"},
-        {"rhsusf_stryker_m1132_m2_np_wd",1,"true"},
+        {"nord_b_afougf_m1151_base",1,"true"},
+        {"nord_rhsusf_m1043_w_mk19",1,"true"},
+        {"nord_b_afougf_m998_2dr",3,"true"},
+        {"nord_rhsusf_m966_w",1,"true"},
+        {"nord_rhsusf_stryker_m1132_m2_np_wd",1,"true"},
 		};
         spawnPoints[] =
         {
@@ -540,12 +540,12 @@ class legion_pidorasov_spawner_class //ЛЕГИОН ПИДОРАСОВ БЕЗМ�
         displayName = "Запрос техники ЛСР";
         vehicles[] =
         {
-		{"b_afougf_yt_m998_2dr",1,"true"},
+		{"nord_b_afougf_m998_2dr",1,"true"},
         {"tundra_ukr_krest",1,"true"},
         {"NORD_BRDM2_UA",1,"true"},
         {"rhsusf_m113_usarmy_M2_90",1,"true"},
-		{"b_afougf_m1151_base",2,"true"},
-		{"m113_ukr_krest",1,"true"},
+		{"nord_b_afougf_m1151_base",2,"true"},
+		{"nord_m113_krest",1,"true"},
 		};
         spawnPoints[] =
         {
@@ -564,9 +564,9 @@ class gurstugna_spawner_class //ГУР Стугна
         displayName = "Запрос техники ГУР Стугна";
         vehicles[] =
         {
-		{"b_afougf_bmp1p",1,"true"},
+		{"nord_b_afougf_bmp1p",1,"true"},
         {"nord_uaz452b_ukr",2,"true"},
-        {"b_afougf_m1151_base",2,"true"},
+        {"nord_b_afougf_m1151_base",2,"true"},
         {"rhsusf_m113_usarmy_M2_90",2,"true"},
 		};
         spawnPoints[] =
@@ -586,14 +586,14 @@ class gurbratstvo_spawner_class //ГУР Братство
         displayName = "Запрос техники ГУР Братсво";
         vehicles[] =
         {
-		{"m2a2_pixel_krest",1,"true"},
-        {"b_afougf_yt_m998_2dr",2,"true"},
-        {"b_afougf_uaf_fiona",1,"true"},
-        {"b_afougf_m1151_base",1,"true"},
-        {"rhsusf_m1043_w_mk19",2,"true"},
-        {"b_afougf_uaf_novator",1,"true"},
+		{"nord_RHS_M2A2_wd",1,"true"},
+        {"nord_b_afougf_m998_2dr",2,"true"},
+        {"nord_b_afougf_uaf_fiona",1,"true"},
+        {"nord_b_afougf_m1151_base",1,"true"},
+        {"nord_rhsusf_m1043_w_mk19",2,"true"},
+        {"nord_b_afougf_uaf_novator",1,"true"},
         {"tundra_ukr_krest",1,"true"},
-        {"rhsusf_stryker_m1132_m2_wd",1,"true"},
+        {"nord_rhsusf_stryker_m1132_m2_wd",1,"true"},
 		{"rhsusf_m113_usarmy_M2_90",1,"true"},
 		};
         spawnPoints[] =
